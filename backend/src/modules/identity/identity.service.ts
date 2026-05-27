@@ -245,7 +245,8 @@ export class IdentityService {
       where: { email },
     });
     if (!user) {
-      throw new NotFoundException('Platform User not registered. Please register on kswtechzone.com first.');
+      const rootDomain = process.env.ROOT_DOMAIN || 'kswms.cloude';
+      throw new NotFoundException(`Platform User not registered. Please register on ${rootDomain} first.`);
     }
 
     // Check for existing membership

@@ -11,7 +11,8 @@ export class SeedService implements OnModuleInit {
   }
 
   async seedAdmin() {
-    const adminEmail = 'sanjay@kswtechzone.com.np';
+    const rootDomain = process.env.ROOT_DOMAIN || 'kswms.cloude';
+    const adminEmail = `sanjay@${rootDomain}`;
     const password = 'Ksw@123';
     
     try {

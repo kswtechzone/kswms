@@ -26,11 +26,13 @@ async function main() {
   });
 
   // 2. Create Super Admin
+  const rootDomain = process.env.ROOT_DOMAIN || 'kswms.cloude';
+  const adminEmail = `admin@${rootDomain}`;
   await prisma.user.upsert({
-    where: { email: 'admin@kswtechzone.com.np' },
+    where: { email: adminEmail },
     update: {},
     create: {
-      email: 'admin@kswtechzone.com.np',
+      email: adminEmail,
       passwordHash,
       name: 'Super Admin',
       role: 'SUPER_ADMIN',
@@ -39,7 +41,7 @@ async function main() {
   });
 
   console.log('--- Production Baseline Seeded ---');
-  console.log('Super Admin: admin@kswtechzone.com.np / Admin@123');
+  console.log(`Super Admin: ${adminEmail} / Admin@123`);
 }
 
 main()

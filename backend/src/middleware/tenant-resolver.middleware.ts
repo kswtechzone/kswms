@@ -22,7 +22,12 @@ export class TenantResolverMiddleware implements NestMiddleware {
        }
     } else {
         // Production resolution
-        const isCustomDomain = !host.includes('kswtechzone.com.np') && !host.includes('kswtechzone.com'); 
+        const rootDomain = process.env.ROOT_DOMAIN || 'kswms.cloude';
+        const isCustomDomain = 
+            !host.includes(rootDomain) && 
+            !host.includes('kswms.cloude') && 
+            !host.includes('kswtechzone.com.np') && 
+            !host.includes('kswtechzone.com'); 
         if (isCustomDomain) {
             website = await this.prisma.client.website.findUnique({
                 where: { customDomain: host }

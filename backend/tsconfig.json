@@ -19,6 +19,7 @@
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
     "esModuleInterop": true,
+    "importHelpers": true,
     "types": ["node", "jest"]
   },
   "include": ["src/**/*"],
