@@ -4,8 +4,9 @@ generator client {
 
 generator client_root {
   provider = "prisma-client-js"
-  output   = "../../node_modules/@prisma/client"
+  output   = "../../node_modules/.prisma/client"
 }
+
 
 datasource db {
   provider = "postgresql"
@@ -63,6 +64,9 @@ model Brand {
   organization   Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
   hotels         Hotel[]
   websites       Website[]
+
+  @@index([organizationId])
+  @@index([deletedAt])
 }
 
 model User {
@@ -78,6 +82,9 @@ model User {
 
   organization   Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
   staffProfile   Staff?
+
+  @@index([organizationId])
+  @@index([deletedAt])
 }
 
 model Hotel {
@@ -95,6 +102,10 @@ model Hotel {
   brand          Brand        @relation(fields: [brandId], references: [id], onDelete: Cascade)
   rooms          Room[]
   restaurants    Restaurant[]
+
+  @@index([organizationId])
+  @@index([brandId])
+  @@index([deletedAt])
 }
 
 model Room {
@@ -116,6 +127,9 @@ model Room {
 
   hotel       Hotel    @relation(fields: [hotelId], references: [id], onDelete: Cascade)
   bookings    Booking[]
+
+  @@index([hotelId])
+  @@index([deletedAt])
 }
 
 model Booking {
@@ -141,6 +155,12 @@ model Booking {
   orders         Order[]
   parlorBookings ServiceBooking[]
   invoices       Invoice[]
+
+  @@index([organizationId])
+  @@index([roomId])
+  @@index([guestId])
+  @@index([deletedAt])
+  @@index([startTime, endTime])
 }
 
 // --- Website Builder ---
@@ -162,6 +182,9 @@ model Website {
   organization   Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
   brand          Brand        @relation(fields: [brandId], references: [id], onDelete: Cascade)
   pages          CMSPage[]
+
+  @@index([organizationId])
+  @@index([deletedAt])
 }
 
 model CMSPage {

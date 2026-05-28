@@ -5,7 +5,7 @@ import { API_BASE_URL } from '@/lib/api';
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { 
+import {
   LayoutDashboard, Users, Hotel, Settings, LogOut, Bell, Search,
   ShieldCheck, Globe, UtensilsCrossed, Package, Wallet, Briefcase,
   Building2, Lock, AlertTriangle, RefreshCw, Loader2, Scissors
@@ -152,14 +152,14 @@ export default function DashboardShell({ children, mode }: DashboardShellProps) 
 
   // Sidebar brand
   const brandTitle = isAdmin
-    ? <><span style={{ color: 'var(--accent)' }}>KSW</span><span style={{ color: 'var(--sidebar-text)' }}>HOSPITALITY</span></>
+    ? <><span style={{ color: 'var(--accent)' }}>KSWMS</span><span style={{ color: 'var(--sidebar-text)' }}> - One Stop Business Management System</span></>
     : user.organization?.name || 'My Business';
   const brandSub = isAdmin ? 'Super Admin Console' : 'Business Workspace';
 
   return (
     <div style={{ minHeight: '100vh', background: 'var(--content-bg)' }}>
       {/* Realtime Route Loading Indicator */}
-      <div 
+      <div
         key={`loader-${pathname}`}
         style={{
           position: 'fixed',
@@ -190,9 +190,9 @@ export default function DashboardShell({ children, mode }: DashboardShellProps) 
         </div>
 
         {fetchError && !isAdmin && (
-          <div style={{ 
+          <div style={{
             display: 'flex', alignItems: 'center', gap: '6px',
-            padding: '8px 12px', borderRadius: 'var(--radius-md)', 
+            padding: '8px 12px', borderRadius: 'var(--radius-md)',
             background: 'rgba(245, 158, 11, 0.1)', color: '#f59e0b',
             fontSize: '0.75rem', fontWeight: 600, marginBottom: 'var(--space-4)'
           }}>
@@ -209,8 +209,8 @@ export default function DashboardShell({ children, mode }: DashboardShellProps) 
               const isActive = pathname === item.href;
 
               return (
-                <Link 
-                  key={item.name} 
+                <Link
+                  key={item.name}
                   href={item.href}
                   style={{
                     display: 'flex',
@@ -233,8 +233,8 @@ export default function DashboardShell({ children, mode }: DashboardShellProps) 
         </nav>
 
         <div style={{ marginTop: 'auto', paddingTop: 'var(--space-8)' }}>
-          <button 
-            className="btn" 
+          <button
+            className="btn"
             style={{ width: '100%', justifyContent: 'flex-start', gap: 'var(--space-3)', background: 'transparent', color: '#ef4444', paddingLeft: 'var(--space-4)' }}
             onClick={() => { localStorage.clear(); window.location.href = '/login'; }}
           >
@@ -245,8 +245,8 @@ export default function DashboardShell({ children, mode }: DashboardShellProps) 
 
       {/* ─── Main Content ───────────────────────────────── */}
       <main className="admin-content">
-        <header style={{ 
-          display: 'flex', alignItems: 'center', justifyContent: 'space-between', 
+        <header style={{
+          display: 'flex', alignItems: 'center', justifyContent: 'space-between',
           marginBottom: 'var(--space-8)', paddingBottom: 'var(--space-4)', borderBottom: '1px solid var(--border)'
         }}>
           <div style={{ position: 'relative', width: '300px' }}>
@@ -263,8 +263,8 @@ export default function DashboardShell({ children, mode }: DashboardShellProps) 
             <NotificationBell />
             <div style={{ height: '32px', width: '1px', background: 'var(--border)' }}></div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-3)' }}>
-              <div style={{ 
-                width: '36px', height: '36px', borderRadius: '50%', background: 'var(--primary)', 
+              <div style={{
+                width: '36px', height: '36px', borderRadius: '50%', background: 'var(--primary)',
                 display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontWeight: 600, fontSize: '0.875rem'
               }}>
                 {user.name?.substring(0, 2).toUpperCase() || 'AD'}

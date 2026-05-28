@@ -3,10 +3,22 @@
 import { API_BASE_URL } from '@/lib/api';
 
 import React, { useState } from 'react';
-import { UserPlus, Building2, Mail, Lock, User, Eye, EyeOff, ShieldAlert, BadgeCheck } from 'lucide-react';
+import { UserPlus, Building2, Mail, Lock, User, Eye, EyeOff, ShieldAlert, BadgeCheck, Hotel, UtensilsCrossed, Scissors, Package, Briefcase, Wallet, Users as UsersIcon, Globe, Check, LayoutDashboard } from 'lucide-react';
+
+const ALL_SERVICES = [
+  { key: 'HOTEL_MANAGEMENT', label: 'Hotel Management', icon: Hotel, color: '#f59e0b', description: 'Room inventory, bookings & hourly pricing' },
+  { key: 'RESTAURANT', label: 'F&B Management', icon: UtensilsCrossed, color: '#ef4444', description: 'Menu management, table orders & kitchen ticketing' },
+  { key: 'POS', label: 'Unified Billing & POS', icon: LayoutDashboard, color: '#f59e0b', description: 'Consolidated invoicing for rooms, food & services' },
+  { key: 'PARLOR', label: 'Parlor Management', icon: Scissors, color: '#8b5cf6', description: 'Salon services, stylist scheduling & appointments' },
+  { key: 'INVENTORY', label: 'Inventory', icon: Package, color: '#10b981', description: 'Stock tracking, purchase orders & waste logs' },
+  { key: 'HR', label: 'HR & Staffing', icon: Briefcase, color: '#8b5cf6', description: 'Employee records, payroll & attendance' },
+  { key: 'FINANCE', label: 'Finance', icon: Wallet, color: '#ec4899', description: 'Invoicing, expenses & revenue reports' },
+  { key: 'CRM', label: 'Customer CRM', icon: UsersIcon, color: '#e11d48', description: 'Client profiles directory, loyalty metrics' },
+];
 
 export default function RegisterPage() {
   const [profileType, setProfileType] = useState<'ORGANIZATION' | 'USER'>('ORGANIZATION');
+  const [selectedModules, setSelectedModules] = useState<string[]>(['WEBSITE']);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -17,6 +29,13 @@ export default function RegisterPage() {
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
+
+  const toggleModule = (key: string) => {
+    if (key === 'WEBSITE') return;
+    setSelectedModules(prev =>
+      prev.includes(key) ? prev.filter(k => k !== key) : [...prev, key]
+    );
+  };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -35,7 +54,8 @@ export default function RegisterPage() {
       email: formData.email,
       password: formData.password,
       orgName: profileType === 'ORGANIZATION' ? formData.orgName : `KSWUSER Organization ${uniqueSuffix}`,
-      orgSlug: profileType === 'ORGANIZATION' ? formData.orgSlug : `kswuser-${uniqueSuffix}`
+      orgSlug: profileType === 'ORGANIZATION' ? formData.orgSlug : `kswuser-${uniqueSuffix}`,
+      selectedModules: profileType === 'ORGANIZATION' ? selectedModules : undefined
     };
 
     try {
@@ -156,6 +176,100 @@ export default function RegisterPage() {
             </div>
           </div>
         </div>
+
+        {/* Service Selection - only for Business profiles */}
+        {profileType === 'ORGANIZATION' && (
+          <div style={{ marginBottom: 'var(--space-6)' }}>
+            <div style={{ marginBottom: 'var(--space-3)' }}>
+              <p style={{ color: 'var(--text-muted)', fontSize: '0.75rem', fontWeight: 600, textTransform: 'uppercase', marginBottom: '4px' }}>
+                Select Services You Need
+              </p>
+              <p style={{ color: 'rgba(255,255,255,0.35)', fontSize: '0.75rem' }}>
+                Choose the modules you want to start with. You can enable more later.
+              </p>
+            </div>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px' }}>
+              {/* Website Builder - always free & pre-selected */}
+              <div style={{
+                padding: '12px',
+                borderRadius: 'var(--radius-md)',
+                background: 'rgba(59, 130, 246, 0.08)',
+                border: '2px solid rgba(59, 130, 246, 0.25)',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '10px',
+                cursor: 'not-allowed',
+                opacity: 1,
+              }}>
+                <div style={{
+                  width: '32px', height: '32px', borderRadius: '8px',
+                  background: 'rgba(59, 130, 246, 0.15)', color: '#3b82f6',
+                  display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0
+                }}>
+                  <Globe size={16} />
+                </div>
+                <div style={{ flex: 1, minWidth: 0 }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                    <span style={{ fontWeight: 700, fontSize: '0.8rem', color: 'white' }}>Website Builder</span>
+                    <span style={{
+                      fontSize: '0.6rem', fontWeight: 800, textTransform: 'uppercase',
+                      padding: '1px 6px', borderRadius: '4px',
+                      background: 'rgba(16, 185, 129, 0.15)', color: '#34d399',
+                      border: '1px solid rgba(16, 185, 129, 0.25)',
+                      letterSpacing: '0.02em'
+                    }}>Free</span>
+                  </div>
+                  <div style={{ fontSize: '0.65rem', color: 'rgba(255,255,255,0.4)', marginTop: '1px' }}>Included with every account</div>
+                </div>
+                <Check size={16} color="#34d399" style={{ flexShrink: 0 }} />
+              </div>
+              {/* Other selectable services */}
+              {ALL_SERVICES.map(svc => {
+                const Icon = svc.icon;
+                const selected = selectedModules.includes(svc.key);
+                return (
+                  <div
+                    key={svc.key}
+                    onClick={() => toggleModule(svc.key)}
+                    style={{
+                      padding: '12px',
+                      borderRadius: 'var(--radius-md)',
+                      background: selected ? 'rgba(166, 118, 83, 0.12)' : 'rgba(255,255,255,0.02)',
+                      border: selected ? '2px solid var(--primary)' : '2px solid rgba(255,255,255,0.05)',
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '10px',
+                      cursor: 'pointer',
+                      transition: 'all 0.15s ease',
+                    }}
+                  >
+                    <div style={{
+                      width: '32px', height: '32px', borderRadius: '8px',
+                      background: selected ? 'rgba(166, 118, 83, 0.15)' : 'rgba(255,255,255,0.05)',
+                      color: selected ? 'var(--primary)' : 'rgba(255,255,255,0.3)',
+                      display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0
+                    }}>
+                      <Icon size={16} />
+                    </div>
+                    <div style={{ flex: 1, minWidth: 0 }}>
+                      <span style={{ fontWeight: 700, fontSize: '0.78rem', color: selected ? 'white' : 'rgba(255,255,255,0.6)' }}>{svc.label}</span>
+                      <div style={{ fontSize: '0.6rem', color: 'rgba(255,255,255,0.35)', marginTop: '1px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{svc.description}</div>
+                    </div>
+                    <div style={{
+                      width: '18px', height: '18px', borderRadius: '4px',
+                      border: selected ? '2px solid var(--primary)' : '2px solid rgba(255,255,255,0.15)',
+                      background: selected ? 'var(--primary)' : 'transparent',
+                      display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0,
+                      transition: 'all 0.15s ease',
+                    }}>
+                      {selected && <Check size={12} color="white" />}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        )}
 
         {error && (
           <div style={{ 

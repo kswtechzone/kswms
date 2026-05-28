@@ -12,7 +12,7 @@ export class AuthService {
     private prisma: PrismaService,
     private jwtService: JwtService,
     private notificationService: NotificationService,
-  ) {}
+  ) { }
 
   async register(data: any) {
     this.logger.log(`Registering new user: ${data.email} with profile type: ${data.profileType || 'ORGANIZATION'}`);
@@ -48,6 +48,13 @@ export class AuthService {
       const result = await this.prisma.client.$transaction(async (tx) => {
         let org;
 
+        // Website builder is always free for every organization
+        const baseModules = ['DASHBOARD', 'WEBSITE'];
+        const userModules = data.selectedModules
+          ? data.selectedModules.filter(m => m !== 'DASHBOARD' && m !== 'WEBSITE')
+          : [];
+        const enabledModules = [...new Set([...baseModules, ...userModules])];
+
         if (isUserType) {
           // Find or create default KSWUSER organization
           org = await tx.organization.findUnique({
@@ -59,7 +66,7 @@ export class AuthService {
               data: {
                 name: 'KSWUSER Organization',
                 slug: 'kswuser',
-                enabledModules: ['DASHBOARD'],
+                enabledModules,
                 brands: {
                   create: {
                     name: 'KSWUSER',
@@ -75,7 +82,7 @@ export class AuthService {
             data: {
               name: data.orgName,
               slug: data.orgSlug,
-              enabledModules: ['DASHBOARD'],
+              enabledModules,
               brands: {
                 create: {
                   name: data.orgName,
@@ -101,12 +108,12 @@ export class AuthService {
       });
 
       this.logger.log(`Successfully registered: ${data.email}`);
-      
+
       // Trigger welcome notification
       try {
         await this.notificationService.createNotification(
           data.email,
-          'Welcome to KSW Hospitality!',
+          'Welcome to kswms-One stop business management system!',
           `Hello ${data.name || 'User'}, your ${isUserType ? 'individual guest' : 'business management'} account has been registered successfully.`
         );
       } catch (e) {
@@ -122,7 +129,7 @@ export class AuthService {
 
   async login(email: string, pass: string) {
     this.logger.log(`Login attempt: ${email}`);
-    
+
     try {
       const user = await this.prisma.client.user.findUnique({
         where: { email },
@@ -140,11 +147,11 @@ export class AuthService {
         throw new UnauthorizedException('Invalid credentials');
       }
 
-      const payload = { 
-        sub: user.id, 
-        email: user.email, 
-        orgId: user.organizationId, 
-        role: user.role 
+      const payload = {
+        sub: user.id,
+        email: user.email,
+        orgId: user.organizationId,
+        role: user.role
       };
 
       this.logger.log(`Login successful: ${email}`);

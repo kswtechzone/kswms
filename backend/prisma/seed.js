@@ -1,8 +1,14 @@
 const { PrismaClient } = require('@prisma/client');
-const bcrypt = require('bcrypt');
+const { PrismaPg } = require('@prisma/adapter-pg');
+const { Pool } = require('pg');
+const bcrypt = require('bcryptjs');
 require('dotenv').config();
 
-const prisma = new PrismaClient();
+const pool = new Pool({ 
+  connectionString: process.env.DATABASE_URL
+});
+const adapter = new PrismaPg(pool);
+const prisma = new PrismaClient({ adapter });
 
 async function main() {
   const passwordHash = await bcrypt.hash('Admin@123', 10);
@@ -20,10 +26,10 @@ async function main() {
 
   // 2. Create Super Admin
   const admin = await prisma.user.upsert({
-    where: { email: 'admin@kswtechzone.com.np' },
+    where: { email: 'admin@kswtechzone.com' },
     update: {},
     create: {
-      email: 'admin@kswtechzone.com.np',
+      email: 'admin@kswtechzone.com',
       passwordHash,
       name: 'Super Admin',
       role: 'SUPER_ADMIN',
@@ -32,7 +38,7 @@ async function main() {
   });
 
   console.log('--- Seeding Completed ---');
-  console.log('Super Admin: admin@kswtechzone.com.np / Admin@123');
+  console.log('Super Admin: admin@kswtechzone.com / Admin@123');
 }
 
 main()
@@ -42,4 +48,5 @@ main()
   })
   .finally(async () => {
     await prisma.$disconnect();
+    await pool.end();
   });

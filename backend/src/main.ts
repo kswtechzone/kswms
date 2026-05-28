@@ -1,9 +1,11 @@
 import 'dotenv/config';
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
+import compression from 'compression';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+  app.use(compression());
   const rootDomain = process.env.ROOT_DOMAIN || 'kswms.cloude';
   app.enableCors({
     origin: (origin, callback) => {

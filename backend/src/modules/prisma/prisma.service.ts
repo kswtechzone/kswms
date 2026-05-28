@@ -11,7 +11,9 @@ export class PrismaService implements OnModuleInit, OnModuleDestroy {
   public client: any;
 
   constructor() {
-    const maxConnections = process.env.DATABASE_POOL_MAX ? parseInt(process.env.DATABASE_POOL_MAX) : 20;
+    const isProd = process.env.NODE_ENV === 'production';
+    const defaultMax = isProd ? 10 : 5;
+    const maxConnections = process.env.DATABASE_POOL_MAX ? parseInt(process.env.DATABASE_POOL_MAX) : defaultMax;
     const idleTimeout = process.env.DATABASE_IDLE_TIMEOUT ? parseInt(process.env.DATABASE_IDLE_TIMEOUT) : 30000;
     const connectionTimeout = process.env.DATABASE_CONN_TIMEOUT ? parseInt(process.env.DATABASE_CONN_TIMEOUT) : 5000;
 

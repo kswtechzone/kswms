@@ -19,24 +19,25 @@ jobs:
           key: ${{ secrets.VPS_SSH_KEY }}
           port: 22
           script: |
-            cd /var/www/kswms
+            cd /apps/kswms
             
             # Pull latest changes
             git pull origin main
             
-            # Backend build
-            cd backend
+            # Install all dependencies at once using workspaces
             npm install
-            npx prisma generate
-            npm run build
             
-            # Frontend build
-            cd ../frontend
-            npm install
-            npm run build
-            cp -r public .next/standalone/
-            cp -r .next/static .next/standalone/.next/
+            # Backend build using workspaces
+            npm run prisma:generate -w backend
+            npm run build -w backend
+            
+            # Frontend build with memory constraints to prevent OOM on VPS
+            export NODE_OPTIONS="--max-old-space-size=1024"
+            npm run build -w frontend
+            
+            # Copy assets for frontend standalone output
+            cp -r frontend/public frontend/.next/standalone/
+            cp -r frontend/.next/static frontend/.next/standalone/.next/
             
             # Restart PM2
-            cd ..
             pm2 restart ecosystem.config.js
