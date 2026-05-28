@@ -42,7 +42,7 @@ export default function WebsitesPage() {
                   </div>
                 </td>
                 <td style={{ padding: 'var(--space-4) var(--space-3)', color: 'var(--text-muted)' }}>
-                  {site.subdomain}.kswtechzone.com.np
+                  {site.subdomain}.kswms.cloud
                 </td>
                 <td style={{ padding: 'var(--space-4) var(--space-3)' }}>
                   <span style={{ 

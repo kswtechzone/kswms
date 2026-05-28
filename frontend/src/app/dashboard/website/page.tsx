@@ -432,7 +432,7 @@ export default function OrgWebsitePage() {
               )}
             </h1>
             <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', margin: 0 }}>
-              {selectedWebsite ? `Managing domain: ${selectedWebsite.customDomain || `${selectedWebsite.subdomain}.kswtechzone.com.np`}` : 'Create your public booking presence'}
+              {selectedWebsite ? `Managing domain: ${selectedWebsite.customDomain || `${selectedWebsite.subdomain}.kswms.cloud`}` : 'Create your public booking presence'}
             </p>
           </div>
         </div>
@@ -453,7 +453,7 @@ export default function OrgWebsitePage() {
               </button>
               
               <a 
-                href={`https://${selectedWebsite.customDomain || `${selectedWebsite.subdomain}.kswtechzone.com.np`}`} 
+                href={`https://${selectedWebsite.customDomain || `${selectedWebsite.subdomain}.kswms.cloud`}`} 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="btn btn-primary"
@@ -653,7 +653,7 @@ export default function OrgWebsitePage() {
                 <span style={{ display: 'inline-block', width: '10px', height: '10px', borderRadius: '50%', background: '#eab308' }}></span>
                 <span style={{ display: 'inline-block', width: '10px', height: '10px', borderRadius: '50%', background: '#22c55e' }}></span>
                 <span style={{ fontFamily: 'monospace', color: 'var(--text-muted)', fontSize: '0.8rem', marginLeft: '12px' }}>
-                  https://{selectedWebsite.customDomain || `${selectedWebsite.subdomain}.kswtechzone.com.np`}/{selectedPage?.slug === 'home' ? '' : selectedPage?.slug}
+                  https://{selectedWebsite.customDomain || `${selectedWebsite.subdomain}.kswms.cloud`}/{selectedPage?.slug === 'home' ? '' : selectedPage?.slug}
                 </span>
               </div>
 
@@ -1213,7 +1213,7 @@ export default function OrgWebsitePage() {
                     onChange={(e) => setNewSiteData({ ...newSiteData, subdomain: e.target.value.toLowerCase().replace(/[^a-z0-9]/g, '') })} 
                     required 
                   />
-                  <span style={{ color: 'var(--text-muted)' }}>.kswtechzone.com.np</span>
+                  <span style={{ color: 'var(--text-muted)' }}>.kswms.cloud</span>
                 </div>
               </div>
 
@@ -1337,7 +1337,7 @@ export default function OrgWebsitePage() {
               <span style={{ display: 'inline-block', width: '10px', height: '10px', borderRadius: '50%', background: '#eab308' }}></span>
               <span style={{ display: 'inline-block', width: '10px', height: '10px', borderRadius: '50%', background: '#22c55e' }}></span>
               <span style={{ fontFamily: 'monospace', color: 'var(--text-muted)', fontSize: '0.85rem', marginLeft: '12px' }}>
-                https://{selectedWebsite.customDomain || `${selectedWebsite.subdomain}.kswtechzone.com.np`}/{selectedPage?.slug === 'home' ? '' : selectedPage?.slug}
+                https://{selectedWebsite.customDomain || `${selectedWebsite.subdomain}.kswms.cloud`}/{selectedPage?.slug === 'home' ? '' : selectedPage?.slug}
               </span>
             </div>
 

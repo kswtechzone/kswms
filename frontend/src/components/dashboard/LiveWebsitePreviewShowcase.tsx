@@ -69,7 +69,7 @@ export default function LiveWebsitePreviewShowcase() {
               )}
             </h2>
             <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', margin: 0 }}>
-              {website ? `Live subdomain preview: https://${website.subdomain}.kswtechzone.com.np` : 'No website deployed for this organization yet.'}
+              {website ? `Live subdomain preview: https://${website.subdomain}.kswms.cloud` : 'No website deployed for this organization yet.'}
             </p>
           </div>
         </div>
@@ -81,7 +81,7 @@ export default function LiveWebsitePreviewShowcase() {
                 <Edit size={16} /> Open CMS Studio
               </Link>
               <a 
-                href={`https://${website.subdomain}.kswtechzone.com.np`} 
+                href={`https://${website.subdomain}.kswms.cloud`} 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="btn btn-primary"
@@ -112,7 +112,7 @@ export default function LiveWebsitePreviewShowcase() {
               <span style={{ display: 'inline-block', width: '12px', height: '12px', borderRadius: '50%', background: '#eab308' }}></span>
               <span style={{ display: 'inline-block', width: '12px', height: '12px', borderRadius: '50%', background: '#22c55e' }}></span>
               <div style={{ background: '#0f172a', padding: '6px 16px', borderRadius: '8px', color: '#94a3b8', fontSize: '0.85rem', flex: 1, fontFamily: 'monospace', marginLeft: '12px' }}>
-                https://{website.subdomain}.kswtechzone.com.np
+                https://{website.subdomain}.kswms.cloud
               </div>
             </div>
 
