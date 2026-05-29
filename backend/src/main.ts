@@ -7,6 +7,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.use(compression());
   const rootDomain = process.env.ROOT_DOMAIN || 'kswms.cloude';
+  const frontendPort = process.env.FRONTEND_PORT || '3000';
   app.enableCors({
     origin: (origin, callback) => {
       if (!origin) {
@@ -15,7 +16,8 @@ async function bootstrap() {
       }
       
       const allowedOrigins = [
-        'http://localhost:3000',
+        `http://localhost:${frontendPort}`,
+        'http://localhost:3000', // Default fallback
         `https://${rootDomain}`,
         `https://ms.${rootDomain}`,
         `https://api.${rootDomain}`,
