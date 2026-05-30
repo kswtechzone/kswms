@@ -19,14 +19,23 @@ if (typeof window !== 'undefined') {
     if (currentHostname !== 'localhost' && currentHostname !== '127.0.0.1') {
       const isIp = currentHostname.match(/^\d+\.\d+\.\d+\.\d+$/);
       if (!isIp) {
-        // Dynamic domain-based mapping (e.g. kswms.cloud or ms.kswms.cloud -> api.kswms.cloud)
-        // If they use a multi-tenant or subdomain architecture, this maps correctly
-        if (currentHostname.startsWith('ms.')) {
-          resolvedApiUrl = `${currentProtocol}//api.${currentHostname.substring(3)}`;
-        } else if (currentHostname.startsWith('www.')) {
-          resolvedApiUrl = `${currentProtocol}//api.${currentHostname.substring(4)}`;
+        // Central platform domains
+        const platformDomains = ['kswms.cloud', 'kswtechzone.com.np', 'kswtechzone.com', 'kswms.cloude'];
+        const matchedDomain = platformDomains.find(domain => currentHostname.endsWith(domain));
+        
+        if (matchedDomain) {
+          // Dynamic subdomain mapping for platform (e.g. ms.kswms.cloud -> api.kswms.cloud)
+          if (currentHostname.startsWith('ms.')) {
+            resolvedApiUrl = `${currentProtocol}//api.${currentHostname.substring(3)}`;
+          } else if (currentHostname.startsWith('www.')) {
+            resolvedApiUrl = `${currentProtocol}//api.${currentHostname.substring(4)}`;
+          } else {
+            // E.g. tenant1.kswms.cloud -> api.kswms.cloud
+            resolvedApiUrl = `${currentProtocol}//api.${matchedDomain}`;
+          }
         } else {
-          resolvedApiUrl = `${currentProtocol}//api.${currentHostname}`;
+          // Custom domain (e.g. glamstudio.com) -> point to centralized backend API endpoint
+          resolvedApiUrl = `${currentProtocol}//api.kswms.cloud`;
         }
       } else {
         // Dynamic IP-based mapping for hosting without a registered domain (e.g. http://<VPS_IP>:4000)

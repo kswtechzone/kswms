@@ -1,16 +1,16 @@
 # Graph Report - kswms  (2026-05-29)
 
 ## Corpus Check
-- 183 files · ~78,776 words
+- 183 files · ~78,863 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1021 nodes · 1324 edges · 108 communities (75 shown, 33 thin omitted)
+- 1023 nodes · 1328 edges · 116 communities (78 shown, 38 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `c964f30c`
+- Built from commit: `74c163ab`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -96,9 +96,17 @@
 - [[_COMMUNITY_Community 105|Community 105]]
 - [[_COMMUNITY_Community 106|Community 106]]
 - [[_COMMUNITY_Community 107|Community 107]]
+- [[_COMMUNITY_Community 108|Community 108]]
+- [[_COMMUNITY_Community 109|Community 109]]
+- [[_COMMUNITY_Community 110|Community 110]]
+- [[_COMMUNITY_Community 111|Community 111]]
+- [[_COMMUNITY_Community 112|Community 112]]
+- [[_COMMUNITY_Community 113|Community 113]]
+- [[_COMMUNITY_Community 114|Community 114]]
+- [[_COMMUNITY_Community 115|Community 115]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `PrismaService` - 24 edges
+1. `PrismaService` - 25 edges
 2. `compilerOptions` - 22 edges
 3. `compilerOptions` - 18 edges
 4. `PrismaModule` - 18 edges
@@ -121,11 +129,11 @@
 - `ManageMenuModal()` --calls--> `useToast()`  [EXTRACTED]
   frontend/src/components/FnbModals.tsx → frontend/src/components/Toast.tsx
 
-## Communities (108 total, 33 thin omitted)
+## Communities (116 total, 38 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.18
-Nodes (12): 2. Hotel Property Operations (HMS), A. Retrieve Available Rooms, B. Query Room Availability Statistics, C. Request Direct Room Stay Reservation, code:json ({), code:javascript (fetch('http://localhost:4000/api/v1/public/techzone/website'), code:json ([), Example Request: (+4 more)
+Cohesion: 0.40
+Nodes (5): code:json ({), code:json ([), Request Payload Schema:, Successful Response (`200 OK`):, Successful Response (`201 Created`):
 
 ### Community 1 - "Community 1"
 Cohesion: 0.04
@@ -136,16 +144,16 @@ Cohesion: 0.06
 Nodes (34): 1. Central KSW Federated Identity Platform (`/modules/identity`), 1. Host-Header Tenant Resolution (`Multi-Tenancy`), 1. Prerequisites, 2. Central Centralized Scheduling & Booking Engine (`/modules/scheduling`), 2. Environment Configuration, 2. Subscription Feature-Flagging (`Modular Engine`), 3. Database Soft-Delete Hook Extension, 3. Installation (+26 more)
 
 ### Community 3 - "Community 3"
-Cohesion: 0.06
-Nodes (24): AuthController, AuthModule, AuthService, JwtStrategy, CmsModule, CrmModule, FinanceModule, HotelModule (+16 more)
+Cohesion: 0.14
+Nodes (4): AuthController, AuthModule, AuthService, JwtStrategy
 
 ### Community 4 - "Community 4"
-Cohesion: 0.10
-Nodes (5): CreateCouponDto, ValidateCouponDto, PromotionController, PromotionService, RestaurantService
+Cohesion: 0.15
+Nodes (6): CreateCouponDto, ValidateCouponDto, PromotionController, PromotionModule, PromotionService, RestaurantModule
 
 ### Community 5 - "Community 5"
 Cohesion: 0.08
-Nodes (8): apiFetch(), deleteRequest(), getRequest(), isIp, patchRequest(), postRequest(), putRequest(), ALL_SERVICES
+Nodes (9): apiFetch(), deleteRequest(), getRequest(), isIp, matchedDomain, patchRequest(), platformDomains, postRequest() (+1 more)
 
 ### Community 6 - "Community 6"
 Cohesion: 0.08
@@ -154,6 +162,10 @@ Nodes (24): 1. High-Level Architecture Blueprint, 2.1 Multi-Tenant Spacing & Sco
 ### Community 7 - "Community 7"
 Cohesion: 0.08
 Nodes (24): compilerOptions, allowSyntheticDefaultImports, baseUrl, declaration, emitDecoratorMetadata, esModuleInterop, experimentalDecorators, forceConsistentCasingInFileNames (+16 more)
+
+### Community 10 - "Community 10"
+Cohesion: 0.10
+Nodes (5): SchedulingController, SchedulingModule, SchedulingEventsService, SchedulingService, TimeSlot
 
 ### Community 11 - "Community 11"
 Cohesion: 0.10
@@ -167,6 +179,10 @@ Nodes (8): jsonLd, metadata, viewport, Toast, ToastContext, ToastContextType, To
 Cohesion: 0.08
 Nodes (24): dependencies, framer-motion, lucide-react, next, react, react-dom, @tailwindcss/postcss, devDependencies (+16 more)
 
+### Community 14 - "Community 14"
+Cohesion: 0.13
+Nodes (4): NotificationController, NotificationModule, NotificationService, RealTimeNotificationEvent
+
 ### Community 15 - "Community 15"
 Cohesion: 0.10
 Nodes (6): fadeUp, FeaturesSectionProps, HeroSectionProps, RoomsSectionProps, ServicesSectionProps, TestimonialsSectionProps
@@ -174,10 +190,6 @@ Nodes (6): fadeUp, FeaturesSectionProps, HeroSectionProps, RoomsSectionProps, Se
 ### Community 16 - "Community 16"
 Cohesion: 0.12
 Nodes (6): ADMIN_MENU, DashboardShellProps, MenuItem, ORG_MENU, GuestProfile, NotificationItem
-
-### Community 17 - "Community 17"
-Cohesion: 0.16
-Nodes (3): UserController, UserModule, UserService
 
 ### Community 20 - "Community 20"
 Cohesion: 0.13
@@ -187,9 +199,9 @@ Nodes (14): 1. Initial Server Setup & Dependencies, 2. Deploying the Application
 Cohesion: 0.17
 Nodes (10): FinanceWidget, HotelWidget, HrWidget, InventoryWidget, LiveWebsitePreviewShowcase, LoyaltyItem, ParlorWidget, PosWidget (+2 more)
 
-### Community 22 - "Community 22"
-Cohesion: 0.05
-Nodes (8): JwtAuthGuard, TenantGuard, CmsController, CrmController, FinanceController, HrController, InventoryController, RestaurantController
+### Community 23 - "Community 23"
+Cohesion: 0.14
+Nodes (6): FinanceModule, CachedTenant, CacheEntry, TenantResolverMiddleware, PrismaService, AppModule
 
 ### Community 25 - "Community 25"
 Cohesion: 0.15
@@ -206,6 +218,10 @@ Nodes (11): 1. General Organization Settings & Themes, 1. General Organization &
 ### Community 33 - "Community 33"
 Cohesion: 0.22
 Nodes (9): 3. Restaurant POS & Dining Operations, A. Retrieve Full Category Menu Cards, B. Request Dining Table Reservation, code:json ([), code:json ({), Successful Response (`200 OK`):, Successful Response (`200 OK`):, Successful Response (`200 OK`): (+1 more)
+
+### Community 35 - "Community 35"
+Cohesion: 0.17
+Nodes (3): InventoryController, InventoryModule, InventoryService
 
 ### Community 36 - "Community 36"
 Cohesion: 0.29
@@ -268,8 +284,8 @@ Cohesion: 0.40
 Nodes (3): adapter, pool, prisma
 
 ### Community 54 - "Community 54"
-Cohesion: 0.40
-Nodes (5): code:json ({), code:json ({), Error Response (`404 Not Found` - Room Unavailable/Occupied):, Successful Response (`200 OK`):, Successful Response (`200 OK`):
+Cohesion: 0.18
+Nodes (12): 2. Hotel Property Operations (HMS), A. Retrieve Available Rooms, B. Query Room Availability Statistics, C. Request Direct Room Stay Reservation, code:json ({), code:json ({), code:json ({), Error Response (`404 Not Found` - Room Unavailable/Occupied): (+4 more)
 
 ### Community 59 - "Community 59"
 Cohesion: 0.15
@@ -299,10 +315,6 @@ Nodes (3): containerVariants, itemVariants, StatsCounterProps
 Cohesion: 0.40
 Nodes (3): activityLog, teamMembers, widgets
 
-### Community 99 - "Community 99"
-Cohesion: 0.24
-Nodes (4): CachedTenant, CacheEntry, TenantCache, TenantResolverMiddleware
-
 ### Community 100 - "Community 100"
 Cohesion: 0.50
 Nodes (3): COUNTRIES, CURRENCIES, OrgSettingsPage()
@@ -311,29 +323,37 @@ Nodes (3): COUNTRIES, CURRENCIES, OrgSettingsPage()
 Cohesion: 0.29
 Nodes (5): BACKEND_PORT, backendEnv, FRONTEND_PORT, fs, path
 
-### Community 107 - "Community 107"
+### Community 105 - "Community 105"
+Cohesion: 0.15
+Nodes (8): CmsModule, CrmModule, HrModule, IdentityModule, OrganizationModule, PrismaModule, SeedService, WebsiteModule
+
+### Community 106 - "Community 106"
+Cohesion: 0.18
+Nodes (5): HotelModule, ParlorModule, CacheEntry, CacheService, PublicModule
+
+### Community 115 - "Community 115"
 Cohesion: 0.67
-Nodes (3): code:json ({), Successful Response (`200 OK`):, Successful Response (`200 OK`):
+Nodes (3): code:javascript (fetch('http://localhost:4000/api/v1/public/techzone/website'), Example Request:, Successful Response (`200 OK`):
 
 ## Knowledge Gaps
-- **292 isolated node(s):** `name`, `version`, `private`, `workspaces`, `dev` (+287 more)
+- **294 isolated node(s):** `name`, `version`, `private`, `workspaces`, `dev` (+289 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **33 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **38 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `CmsService` connect `Community 26` to `Community 3`, `Community 22`?**
-  _High betweenness centrality (0.013) - this node is a cross-community bridge._
-- **Why does `WebsiteController` connect `Community 19` to `Community 3`, `Community 22`?**
+- **Why does `PrismaModule` connect `Community 105` to `Community 3`, `Community 4`, `Community 35`, `Community 106`, `Community 10`, `Community 14`, `Community 23`?**
+  _High betweenness centrality (0.015) - this node is a cross-community bridge._
+- **Why does `PrismaService` connect `Community 23` to `Community 34`, `Community 3`, `Community 4`, `Community 35`, `Community 105`, `Community 106`, `Community 10`, `Community 14`, `Community 17`?**
   _High betweenness centrality (0.012) - this node is a cross-community bridge._
+- **Why does `HotelController` connect `Community 32` to `Community 106`, `Community 107`?**
+  _High betweenness centrality (0.010) - this node is a cross-community bridge._
 - **What connects `name`, `version`, `private` to the rest of the system?**
-  _292 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _294 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.043478260869565216 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
   _Cohesion score 0.05555555555555555 - nodes in this community are weakly interconnected._
 - **Should `Community 3` be split into smaller, more focused modules?**
-  _Cohesion score 0.05721153846153846 - nodes in this community are weakly interconnected._
-- **Should `Community 4` be split into smaller, more focused modules?**
-  _Cohesion score 0.09852216748768473 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.1437908496732026 - nodes in this community are weakly interconnected._

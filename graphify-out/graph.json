@@ -1476,7 +1476,7 @@
       "source_file": "frontend/src/app/register/page.tsx",
       "source_location": "L1",
       "id": "frontend_src_app_register_page_tsx",
-      "community": 5,
+      "community": 114,
       "norm_label": "page.tsx"
     },
     {
@@ -1485,7 +1485,7 @@
       "source_file": "frontend/src/app/register/page.tsx",
       "source_location": "L8",
       "id": "register_page_all_services",
-      "community": 5,
+      "community": 114,
       "norm_label": "all_services"
     },
     {
@@ -1494,7 +1494,7 @@
       "source_file": "frontend/src/app/register/page.tsx",
       "source_location": "L19",
       "id": "register_page_registerpage",
-      "community": 5,
+      "community": 114,
       "norm_label": "registerpage()"
     },
     {
@@ -2776,10 +2776,28 @@
       "norm_label": "isip"
     },
     {
+      "label": "platformDomains",
+      "file_type": "code",
+      "source_file": "frontend/src/lib/api.ts",
+      "source_location": "L23",
+      "id": "lib_api_platformdomains",
+      "community": 5,
+      "norm_label": "platformdomains"
+    },
+    {
+      "label": "matchedDomain",
+      "file_type": "code",
+      "source_file": "frontend/src/lib/api.ts",
+      "source_location": "L24",
+      "id": "lib_api_matcheddomain",
+      "community": 5,
+      "norm_label": "matcheddomain"
+    },
+    {
       "label": "apiFetch()",
       "file_type": "code",
       "source_file": "frontend/src/lib/api.ts",
-      "source_location": "L60",
+      "source_location": "L69",
       "id": "lib_api_apifetch",
       "community": 5,
       "norm_label": "apifetch()"
@@ -2788,7 +2806,7 @@
       "label": "getRequest()",
       "file_type": "code",
       "source_file": "frontend/src/lib/api.ts",
-      "source_location": "L119",
+      "source_location": "L128",
       "id": "lib_api_getrequest",
       "community": 5,
       "norm_label": "getrequest()"
@@ -2797,7 +2815,7 @@
       "label": "postRequest()",
       "file_type": "code",
       "source_file": "frontend/src/lib/api.ts",
-      "source_location": "L126",
+      "source_location": "L135",
       "id": "lib_api_postrequest",
       "community": 5,
       "norm_label": "postrequest()"
@@ -2806,7 +2824,7 @@
       "label": "putRequest()",
       "file_type": "code",
       "source_file": "frontend/src/lib/api.ts",
-      "source_location": "L137",
+      "source_location": "L146",
       "id": "lib_api_putrequest",
       "community": 5,
       "norm_label": "putrequest()"
@@ -2815,7 +2833,7 @@
       "label": "patchRequest()",
       "file_type": "code",
       "source_file": "frontend/src/lib/api.ts",
-      "source_location": "L148",
+      "source_location": "L157",
       "id": "lib_api_patchrequest",
       "community": 5,
       "norm_label": "patchrequest()"
@@ -2824,7 +2842,7 @@
       "label": "deleteRequest()",
       "file_type": "code",
       "source_file": "frontend/src/lib/api.ts",
-      "source_location": "L159",
+      "source_location": "L168",
       "id": "lib_api_deleterequest",
       "community": 5,
       "norm_label": "deleterequest()"
@@ -3798,16 +3816,16 @@
       "source_file": "backend/src/main.ts",
       "source_location": "L1",
       "id": "backend_src_main_ts",
-      "community": 3,
+      "community": 23,
       "norm_label": "main.ts"
     },
     {
       "label": "bootstrap()",
       "file_type": "code",
       "source_file": "backend/src/main.ts",
-      "source_location": "L6",
+      "source_location": "L8",
       "id": "src_main_bootstrap",
-      "community": 3,
+      "community": 23,
       "norm_label": "bootstrap()"
     },
     {
@@ -3834,7 +3852,7 @@
       "source_file": "backend/src/app.module.ts",
       "source_location": "L1",
       "id": "backend_src_app_module_ts",
-      "community": 3,
+      "community": 105,
       "norm_label": "app.module.ts"
     },
     {
@@ -3843,7 +3861,7 @@
       "source_file": "backend/src/app.module.ts",
       "source_location": "L52",
       "id": "src_app_module_appmodule",
-      "community": 3,
+      "community": 23,
       "norm_label": "appmodule"
     },
     {
@@ -3852,7 +3870,7 @@
       "source_file": "backend/src/app.module.ts",
       "source_location": "L53",
       "id": "src_app_module_appmodule_configure",
-      "community": 3,
+      "community": 23,
       "norm_label": ".configure()"
     },
     {
@@ -3906,7 +3924,7 @@
       "source_file": "backend/src/middleware/tenant-resolver.middleware.ts",
       "source_location": "L1",
       "id": "backend_src_middleware_tenant_resolver_middleware_ts",
-      "community": 99,
+      "community": 23,
       "norm_label": "tenant-resolver.middleware.ts"
     },
     {
@@ -3915,7 +3933,7 @@
       "source_file": "backend/src/middleware/tenant-resolver.middleware.ts",
       "source_location": "L5",
       "id": "middleware_tenant_resolver_middleware_cachedtenant",
-      "community": 99,
+      "community": 23,
       "norm_label": "cachedtenant"
     },
     {
@@ -3924,7 +3942,7 @@
       "source_file": "backend/src/middleware/tenant-resolver.middleware.ts",
       "source_location": "L10",
       "id": "middleware_tenant_resolver_middleware_cacheentry",
-      "community": 99,
+      "community": 23,
       "norm_label": "cacheentry"
     },
     {
@@ -3969,7 +3987,7 @@
       "source_file": "backend/src/middleware/tenant-resolver.middleware.ts",
       "source_location": "L43",
       "id": "middleware_tenant_resolver_middleware_tenantresolvermiddleware",
-      "community": 99,
+      "community": 23,
       "norm_label": "tenantresolvermiddleware"
     },
     {
@@ -3978,7 +3996,7 @@
       "source_file": "backend/src/middleware/tenant-resolver.middleware.ts",
       "source_location": "L47",
       "id": "middleware_tenant_resolver_middleware_tenantresolvermiddleware_constructor",
-      "community": 99,
+      "community": 23,
       "norm_label": ".constructor()"
     },
     {
@@ -4050,7 +4068,7 @@
       "source_file": "backend/src/modules/promotion/promotion.module.ts",
       "source_location": "L1",
       "id": "backend_src_modules_promotion_promotion_module_ts",
-      "community": 3,
+      "community": 4,
       "norm_label": "promotion.module.ts"
     },
     {
@@ -4059,7 +4077,7 @@
       "source_file": "backend/src/modules/promotion/promotion.module.ts",
       "source_location": "L13",
       "id": "promotion_promotion_module_promotionmodule",
-      "community": 3,
+      "community": 4,
       "norm_label": "promotionmodule"
     },
     {
@@ -4158,7 +4176,7 @@
       "source_file": "backend/src/modules/organization/organization.service.ts",
       "source_location": "L1",
       "id": "backend_src_modules_organization_organization_service_ts",
-      "community": 23,
+      "community": 105,
       "norm_label": "organization.service.ts"
     },
     {
@@ -4257,7 +4275,7 @@
       "source_file": "backend/src/modules/organization/organization.controller.ts",
       "source_location": "L1",
       "id": "backend_src_modules_organization_organization_controller_ts",
-      "community": 22,
+      "community": 107,
       "norm_label": "organization.controller.ts"
     },
     {
@@ -4356,7 +4374,7 @@
       "source_file": "backend/src/modules/organization/organization.module.ts",
       "source_location": "L1",
       "id": "backend_src_modules_organization_organization_module_ts",
-      "community": 3,
+      "community": 105,
       "norm_label": "organization.module.ts"
     },
     {
@@ -4365,7 +4383,7 @@
       "source_file": "backend/src/modules/organization/organization.module.ts",
       "source_location": "L12",
       "id": "organization_organization_module_organizationmodule",
-      "community": 3,
+      "community": 105,
       "norm_label": "organizationmodule"
     },
     {
@@ -4374,7 +4392,7 @@
       "source_file": "backend/src/modules/parlor/parlor.service.ts",
       "source_location": "L1",
       "id": "backend_src_modules_parlor_parlor_service_ts",
-      "community": 23,
+      "community": 106,
       "norm_label": "parlor.service.ts"
     },
     {
@@ -4473,7 +4491,7 @@
       "source_file": "backend/src/modules/parlor/parlor.controller.ts",
       "source_location": "L1",
       "id": "backend_src_modules_parlor_parlor_controller_ts",
-      "community": 22,
+      "community": 107,
       "norm_label": "parlor.controller.ts"
     },
     {
@@ -4572,7 +4590,7 @@
       "source_file": "backend/src/modules/parlor/parlor.module.ts",
       "source_location": "L1",
       "id": "backend_src_modules_parlor_parlor_module_ts",
-      "community": 3,
+      "community": 106,
       "norm_label": "parlor.module.ts"
     },
     {
@@ -4581,7 +4599,7 @@
       "source_file": "backend/src/modules/parlor/parlor.module.ts",
       "source_location": "L11",
       "id": "parlor_parlor_module_parlormodule",
-      "community": 3,
+      "community": 106,
       "norm_label": "parlormodule"
     },
     {
@@ -4608,7 +4626,7 @@
       "source_file": "backend/src/modules/restaurant/restaurant.service.ts",
       "source_location": "L6",
       "id": "restaurant_restaurant_service_restaurantservice",
-      "community": 4,
+      "community": 98,
       "norm_label": "restaurantservice"
     },
     {
@@ -4617,7 +4635,7 @@
       "source_file": "backend/src/modules/restaurant/restaurant.service.ts",
       "source_location": "L7",
       "id": "restaurant_restaurant_service_restaurantservice_constructor",
-      "community": 4,
+      "community": 98,
       "norm_label": ".constructor()"
     },
     {
@@ -4626,7 +4644,7 @@
       "source_file": "backend/src/modules/restaurant/restaurant.service.ts",
       "source_location": "L12",
       "id": "restaurant_restaurant_service_restaurantservice_getallrestaurants",
-      "community": 4,
+      "community": 98,
       "norm_label": ".getallrestaurants()"
     },
     {
@@ -4635,7 +4653,7 @@
       "source_file": "backend/src/modules/restaurant/restaurant.service.ts",
       "source_location": "L18",
       "id": "restaurant_restaurant_service_restaurantservice_getrestaurants",
-      "community": 4,
+      "community": 98,
       "norm_label": ".getrestaurants()"
     },
     {
@@ -4644,7 +4662,7 @@
       "source_file": "backend/src/modules/restaurant/restaurant.service.ts",
       "source_location": "L25",
       "id": "restaurant_restaurant_service_restaurantservice_createrestaurant",
-      "community": 4,
+      "community": 98,
       "norm_label": ".createrestaurant()"
     },
     {
@@ -4653,7 +4671,7 @@
       "source_file": "backend/src/modules/restaurant/restaurant.service.ts",
       "source_location": "L38",
       "id": "restaurant_restaurant_service_restaurantservice_getmenu",
-      "community": 4,
+      "community": 98,
       "norm_label": ".getmenu()"
     },
     {
@@ -4662,7 +4680,7 @@
       "source_file": "backend/src/modules/restaurant/restaurant.service.ts",
       "source_location": "L52",
       "id": "restaurant_restaurant_service_restaurantservice_createmenu",
-      "community": 4,
+      "community": 98,
       "norm_label": ".createmenu()"
     },
     {
@@ -4671,7 +4689,7 @@
       "source_file": "backend/src/modules/restaurant/restaurant.service.ts",
       "source_location": "L73",
       "id": "restaurant_restaurant_service_restaurantservice_createcategory",
-      "community": 4,
+      "community": 98,
       "norm_label": ".createcategory()"
     },
     {
@@ -4680,7 +4698,7 @@
       "source_file": "backend/src/modules/restaurant/restaurant.service.ts",
       "source_location": "L93",
       "id": "restaurant_restaurant_service_restaurantservice_createmenuitem",
-      "community": 4,
+      "community": 98,
       "norm_label": ".createmenuitem()"
     },
     {
@@ -4689,7 +4707,7 @@
       "source_file": "backend/src/modules/restaurant/restaurant.service.ts",
       "source_location": "L118",
       "id": "restaurant_restaurant_service_restaurantservice_createorder",
-      "community": 4,
+      "community": 98,
       "norm_label": ".createorder()"
     },
     {
@@ -4698,7 +4716,7 @@
       "source_file": "backend/src/modules/restaurant/restaurant.service.ts",
       "source_location": "L189",
       "id": "restaurant_restaurant_service_restaurantservice_verifyrestaurantownership",
-      "community": 4,
+      "community": 98,
       "norm_label": ".verifyrestaurantownership()"
     },
     {
@@ -4707,7 +4725,7 @@
       "source_file": "backend/src/modules/restaurant/restaurant.module.ts",
       "source_location": "L1",
       "id": "backend_src_modules_restaurant_restaurant_module_ts",
-      "community": 3,
+      "community": 4,
       "norm_label": "restaurant.module.ts"
     },
     {
@@ -4716,7 +4734,7 @@
       "source_file": "backend/src/modules/restaurant/restaurant.module.ts",
       "source_location": "L12",
       "id": "restaurant_restaurant_module_restaurantmodule",
-      "community": 3,
+      "community": 4,
       "norm_label": "restaurantmodule"
     },
     {
@@ -4725,7 +4743,7 @@
       "source_file": "backend/src/modules/restaurant/restaurant.service.spec.ts",
       "source_location": "L1",
       "id": "backend_src_modules_restaurant_restaurant_service_spec_ts",
-      "community": 4,
+      "community": 98,
       "norm_label": "restaurant.service.spec.ts"
     },
     {
@@ -4833,7 +4851,7 @@
       "source_file": "backend/src/modules/identity/identity.module.ts",
       "source_location": "L1",
       "id": "backend_src_modules_identity_identity_module_ts",
-      "community": 3,
+      "community": 105,
       "norm_label": "identity.module.ts"
     },
     {
@@ -4842,7 +4860,7 @@
       "source_file": "backend/src/modules/identity/identity.module.ts",
       "source_location": "L19",
       "id": "identity_identity_module_identitymodule",
-      "community": 3,
+      "community": 105,
       "norm_label": "identitymodule"
     },
     {
@@ -4851,7 +4869,7 @@
       "source_file": "backend/src/modules/identity/identity.service.ts",
       "source_location": "L1",
       "id": "backend_src_modules_identity_identity_service_ts",
-      "community": 8,
+      "community": 105,
       "norm_label": "identity.service.ts"
     },
     {
@@ -4950,7 +4968,7 @@
       "source_file": "backend/src/modules/identity/identity.controller.ts",
       "source_location": "L1",
       "id": "backend_src_modules_identity_identity_controller_ts",
-      "community": 8,
+      "community": 105,
       "norm_label": "identity.controller.ts"
     },
     {
@@ -4959,7 +4977,7 @@
       "source_file": "backend/src/modules/identity/identity.controller.ts",
       "source_location": "L6",
       "id": "identity_identity_controller_identitycontroller",
-      "community": 8,
+      "community": 109,
       "norm_label": "identitycontroller"
     },
     {
@@ -4968,7 +4986,7 @@
       "source_file": "backend/src/modules/identity/identity.controller.ts",
       "source_location": "L7",
       "id": "identity_identity_controller_identitycontroller_constructor",
-      "community": 8,
+      "community": 109,
       "norm_label": ".constructor()"
     },
     {
@@ -4977,7 +4995,7 @@
       "source_file": "backend/src/modules/identity/identity.controller.ts",
       "source_location": "L10",
       "id": "identity_identity_controller_identitycontroller_register",
-      "community": 8,
+      "community": 109,
       "norm_label": ".register()"
     },
     {
@@ -4986,7 +5004,7 @@
       "source_file": "backend/src/modules/identity/identity.controller.ts",
       "source_location": "L15",
       "id": "identity_identity_controller_identitycontroller_login",
-      "community": 8,
+      "community": 109,
       "norm_label": ".login()"
     },
     {
@@ -4995,7 +5013,7 @@
       "source_file": "backend/src/modules/identity/identity.controller.ts",
       "source_location": "L20",
       "id": "identity_identity_controller_identitycontroller_refresh",
-      "community": 8,
+      "community": 109,
       "norm_label": ".refresh()"
     },
     {
@@ -5004,7 +5022,7 @@
       "source_file": "backend/src/modules/identity/identity.controller.ts",
       "source_location": "L28",
       "id": "identity_identity_controller_identitycontroller_getprofile",
-      "community": 8,
+      "community": 109,
       "norm_label": ".getprofile()"
     },
     {
@@ -5013,7 +5031,7 @@
       "source_file": "backend/src/modules/identity/identity.controller.ts",
       "source_location": "L46",
       "id": "identity_identity_controller_identitycontroller_createorganization",
-      "community": 8,
+      "community": 109,
       "norm_label": ".createorganization()"
     },
     {
@@ -5022,7 +5040,7 @@
       "source_file": "backend/src/modules/identity/identity.controller.ts",
       "source_location": "L51",
       "id": "identity_identity_controller_identitycontroller_inviteuser",
-      "community": 8,
+      "community": 109,
       "norm_label": ".inviteuser()"
     },
     {
@@ -5031,7 +5049,7 @@
       "source_file": "backend/src/modules/identity/identity.controller.ts",
       "source_location": "L56",
       "id": "identity_identity_controller_identitycontroller_linkcustomer",
-      "community": 8,
+      "community": 109,
       "norm_label": ".linkcustomer()"
     },
     {
@@ -5040,7 +5058,7 @@
       "source_file": "backend/src/modules/scheduling/scheduling.controller.ts",
       "source_location": "L1",
       "id": "backend_src_modules_scheduling_scheduling_controller_ts",
-      "community": 22,
+      "community": 107,
       "norm_label": "scheduling.controller.ts"
     },
     {
@@ -5121,7 +5139,7 @@
       "source_file": "backend/src/modules/scheduling/scheduling.service.ts",
       "source_location": "L1",
       "id": "backend_src_modules_scheduling_scheduling_service_ts",
-      "community": 3,
+      "community": 10,
       "norm_label": "scheduling.service.ts"
     },
     {
@@ -5130,7 +5148,7 @@
       "source_file": "backend/src/modules/scheduling/scheduling.service.ts",
       "source_location": "L6",
       "id": "scheduling_scheduling_service_schedulingeventsservice",
-      "community": 3,
+      "community": 10,
       "norm_label": "schedulingeventsservice"
     },
     {
@@ -5139,7 +5157,7 @@
       "source_file": "backend/src/modules/scheduling/scheduling.service.ts",
       "source_location": "L8",
       "id": "scheduling_scheduling_service_timeslot",
-      "community": 3,
+      "community": 10,
       "norm_label": "timeslot"
     },
     {
@@ -5148,7 +5166,7 @@
       "source_file": "backend/src/modules/scheduling/scheduling.service.ts",
       "source_location": "L15",
       "id": "scheduling_scheduling_service_schedulingservice",
-      "community": 3,
+      "community": 10,
       "norm_label": "schedulingservice"
     },
     {
@@ -5157,7 +5175,7 @@
       "source_file": "backend/src/modules/scheduling/scheduling.service.ts",
       "source_location": "L16",
       "id": "scheduling_scheduling_service_schedulingservice_constructor",
-      "community": 3,
+      "community": 10,
       "norm_label": ".constructor()"
     },
     {
@@ -5166,7 +5184,7 @@
       "source_file": "backend/src/modules/scheduling/scheduling.service.ts",
       "source_location": "L24",
       "id": "scheduling_scheduling_service_schedulingservice_createresource",
-      "community": 3,
+      "community": 10,
       "norm_label": ".createresource()"
     },
     {
@@ -5175,7 +5193,7 @@
       "source_file": "backend/src/modules/scheduling/scheduling.service.ts",
       "source_location": "L44",
       "id": "scheduling_scheduling_service_schedulingservice_getresources",
-      "community": 3,
+      "community": 10,
       "norm_label": ".getresources()"
     },
     {
@@ -5184,7 +5202,7 @@
       "source_file": "backend/src/modules/scheduling/scheduling.service.ts",
       "source_location": "L57",
       "id": "scheduling_scheduling_service_schedulingservice_calculateavailableslots",
-      "community": 3,
+      "community": 10,
       "norm_label": ".calculateavailableslots()"
     },
     {
@@ -5193,7 +5211,7 @@
       "source_file": "backend/src/modules/scheduling/scheduling.service.ts",
       "source_location": "L121",
       "id": "scheduling_scheduling_service_schedulingservice_createcentralbooking",
-      "community": 3,
+      "community": 10,
       "norm_label": ".createcentralbooking()"
     },
     {
@@ -5202,7 +5220,7 @@
       "source_file": "backend/src/modules/scheduling/scheduling.service.ts",
       "source_location": "L235",
       "id": "scheduling_scheduling_service_schedulingservice_cancelbooking",
-      "community": 3,
+      "community": 10,
       "norm_label": ".cancelbooking()"
     },
     {
@@ -5211,7 +5229,7 @@
       "source_file": "backend/src/modules/scheduling/scheduling.service.ts",
       "source_location": "L265",
       "id": "scheduling_scheduling_service_schedulingservice_getbookings",
-      "community": 3,
+      "community": 10,
       "norm_label": ".getbookings()"
     },
     {
@@ -5220,7 +5238,7 @@
       "source_file": "backend/src/modules/scheduling/scheduling.module.ts",
       "source_location": "L1",
       "id": "backend_src_modules_scheduling_scheduling_module_ts",
-      "community": 3,
+      "community": 10,
       "norm_label": "scheduling.module.ts"
     },
     {
@@ -5229,7 +5247,7 @@
       "source_file": "backend/src/modules/scheduling/scheduling.module.ts",
       "source_location": "L14",
       "id": "scheduling_scheduling_module_schedulingmodule",
-      "community": 3,
+      "community": 10,
       "norm_label": "schedulingmodule"
     },
     {
@@ -5238,7 +5256,7 @@
       "source_file": "backend/src/modules/hotel/hotel.module.ts",
       "source_location": "L1",
       "id": "backend_src_modules_hotel_hotel_module_ts",
-      "community": 3,
+      "community": 106,
       "norm_label": "hotel.module.ts"
     },
     {
@@ -5247,7 +5265,7 @@
       "source_file": "backend/src/modules/hotel/hotel.module.ts",
       "source_location": "L12",
       "id": "hotel_hotel_module_hotelmodule",
-      "community": 3,
+      "community": 106,
       "norm_label": "hotelmodule"
     },
     {
@@ -5256,7 +5274,7 @@
       "source_file": "backend/src/modules/hotel/hotel.service.ts",
       "source_location": "L1",
       "id": "backend_src_modules_hotel_hotel_service_ts",
-      "community": 23,
+      "community": 106,
       "norm_label": "hotel.service.ts"
     },
     {
@@ -5346,7 +5364,7 @@
       "source_file": "backend/src/modules/hotel/hotel.controller.ts",
       "source_location": "L1",
       "id": "backend_src_modules_hotel_hotel_controller_ts",
-      "community": 22,
+      "community": 107,
       "norm_label": "hotel.controller.ts"
     },
     {
@@ -5490,7 +5508,7 @@
       "source_file": "backend/src/modules/auth/tenant.guard.ts",
       "source_location": "L1",
       "id": "backend_src_modules_auth_tenant_guard_ts",
-      "community": 22,
+      "community": 107,
       "norm_label": "tenant.guard.ts"
     },
     {
@@ -5499,7 +5517,7 @@
       "source_file": "backend/src/modules/auth/tenant.guard.ts",
       "source_location": "L4",
       "id": "auth_tenant_guard_tenantguard",
-      "community": 22,
+      "community": 107,
       "norm_label": "tenantguard"
     },
     {
@@ -5508,7 +5526,7 @@
       "source_file": "backend/src/modules/auth/tenant.guard.ts",
       "source_location": "L5",
       "id": "auth_tenant_guard_tenantguard_canactivate",
-      "community": 22,
+      "community": 107,
       "norm_label": ".canactivate()"
     },
     {
@@ -5553,7 +5571,7 @@
       "source_file": "backend/src/modules/auth/auth.service.ts",
       "source_location": "L1",
       "id": "backend_src_modules_auth_auth_service_ts",
-      "community": 14,
+      "community": 3,
       "norm_label": "auth.service.ts"
     },
     {
@@ -5607,7 +5625,7 @@
       "source_file": "backend/src/modules/auth/jwt-auth.guard.ts",
       "source_location": "L1",
       "id": "backend_src_modules_auth_jwt_auth_guard_ts",
-      "community": 22,
+      "community": 107,
       "norm_label": "jwt-auth.guard.ts"
     },
     {
@@ -5616,7 +5634,7 @@
       "source_file": "backend/src/modules/auth/jwt-auth.guard.ts",
       "source_location": "L5",
       "id": "auth_jwt_auth_guard_jwtauthguard",
-      "community": 22,
+      "community": 107,
       "norm_label": "jwtauthguard"
     },
     {
@@ -5652,7 +5670,7 @@
       "source_file": "backend/src/modules/notification/notification.controller.ts",
       "source_location": "L7",
       "id": "notification_notification_controller_notificationcontroller",
-      "community": 98,
+      "community": 14,
       "norm_label": "notificationcontroller"
     },
     {
@@ -5661,7 +5679,7 @@
       "source_file": "backend/src/modules/notification/notification.controller.ts",
       "source_location": "L8",
       "id": "notification_notification_controller_notificationcontroller_constructor",
-      "community": 98,
+      "community": 14,
       "norm_label": ".constructor()"
     },
     {
@@ -5670,7 +5688,7 @@
       "source_file": "backend/src/modules/notification/notification.controller.ts",
       "source_location": "L14",
       "id": "notification_notification_controller_notificationcontroller_streamnotifications",
-      "community": 98,
+      "community": 14,
       "norm_label": ".streamnotifications()"
     },
     {
@@ -5679,7 +5697,7 @@
       "source_file": "backend/src/modules/notification/notification.controller.ts",
       "source_location": "L26",
       "id": "notification_notification_controller_notificationcontroller_getnotifications",
-      "community": 98,
+      "community": 14,
       "norm_label": ".getnotifications()"
     },
     {
@@ -5688,7 +5706,7 @@
       "source_file": "backend/src/modules/notification/notification.controller.ts",
       "source_location": "L34",
       "id": "notification_notification_controller_notificationcontroller_createnotification",
-      "community": 98,
+      "community": 14,
       "norm_label": ".createnotification()"
     },
     {
@@ -5697,7 +5715,7 @@
       "source_file": "backend/src/modules/notification/notification.controller.ts",
       "source_location": "L46",
       "id": "notification_notification_controller_notificationcontroller_markallasread",
-      "community": 98,
+      "community": 14,
       "norm_label": ".markallasread()"
     },
     {
@@ -5706,7 +5724,7 @@
       "source_file": "backend/src/modules/notification/notification.controller.ts",
       "source_location": "L54",
       "id": "notification_notification_controller_notificationcontroller_markasread",
-      "community": 98,
+      "community": 14,
       "norm_label": ".markasread()"
     },
     {
@@ -5796,7 +5814,7 @@
       "source_file": "backend/src/modules/notification/notification.module.ts",
       "source_location": "L1",
       "id": "backend_src_modules_notification_notification_module_ts",
-      "community": 3,
+      "community": 14,
       "norm_label": "notification.module.ts"
     },
     {
@@ -5805,7 +5823,7 @@
       "source_file": "backend/src/modules/notification/notification.module.ts",
       "source_location": "L13",
       "id": "notification_notification_module_notificationmodule",
-      "community": 3,
+      "community": 14,
       "norm_label": "notificationmodule"
     },
     {
@@ -5814,7 +5832,7 @@
       "source_file": "backend/src/modules/website/website.module.ts",
       "source_location": "L1",
       "id": "backend_src_modules_website_website_module_ts",
-      "community": 3,
+      "community": 105,
       "norm_label": "website.module.ts"
     },
     {
@@ -5823,7 +5841,7 @@
       "source_file": "backend/src/modules/website/website.module.ts",
       "source_location": "L12",
       "id": "website_website_module_websitemodule",
-      "community": 3,
+      "community": 105,
       "norm_label": "websitemodule"
     },
     {
@@ -5832,7 +5850,7 @@
       "source_file": "backend/src/modules/website/website.controller.ts",
       "source_location": "L1",
       "id": "backend_src_modules_website_website_controller_ts",
-      "community": 22,
+      "community": 107,
       "norm_label": "website.controller.ts"
     },
     {
@@ -5967,7 +5985,7 @@
       "source_file": "backend/src/modules/website/website.service.ts",
       "source_location": "L1",
       "id": "backend_src_modules_website_website_service_ts",
-      "community": 18,
+      "community": 105,
       "norm_label": "website.service.ts"
     },
     {
@@ -6120,7 +6138,7 @@
       "source_file": "backend/src/modules/crm/crm.module.ts",
       "source_location": "L1",
       "id": "backend_src_modules_crm_crm_module_ts",
-      "community": 3,
+      "community": 105,
       "norm_label": "crm.module.ts"
     },
     {
@@ -6129,7 +6147,7 @@
       "source_file": "backend/src/modules/crm/crm.module.ts",
       "source_location": "L12",
       "id": "crm_crm_module_crmmodule",
-      "community": 3,
+      "community": 105,
       "norm_label": "crmmodule"
     },
     {
@@ -6219,7 +6237,7 @@
       "source_file": "backend/src/modules/crm/crm.controller.ts",
       "source_location": "L1",
       "id": "backend_src_modules_crm_crm_controller_ts",
-      "community": 22,
+      "community": 107,
       "norm_label": "crm.controller.ts"
     },
     {
@@ -6228,7 +6246,7 @@
       "source_file": "backend/src/modules/crm/crm.controller.ts",
       "source_location": "L8",
       "id": "crm_crm_controller_crmcontroller",
-      "community": 22,
+      "community": 111,
       "norm_label": "crmcontroller"
     },
     {
@@ -6237,7 +6255,7 @@
       "source_file": "backend/src/modules/crm/crm.controller.ts",
       "source_location": "L9",
       "id": "crm_crm_controller_crmcontroller_constructor",
-      "community": 22,
+      "community": 111,
       "norm_label": ".constructor()"
     },
     {
@@ -6246,7 +6264,7 @@
       "source_file": "backend/src/modules/crm/crm.controller.ts",
       "source_location": "L12",
       "id": "crm_crm_controller_crmcontroller_getguests",
-      "community": 22,
+      "community": 111,
       "norm_label": ".getguests()"
     },
     {
@@ -6255,7 +6273,7 @@
       "source_file": "backend/src/modules/crm/crm.controller.ts",
       "source_location": "L17",
       "id": "crm_crm_controller_crmcontroller_searchguests",
-      "community": 22,
+      "community": 111,
       "norm_label": ".searchguests()"
     },
     {
@@ -6264,7 +6282,7 @@
       "source_file": "backend/src/modules/crm/crm.controller.ts",
       "source_location": "L22",
       "id": "crm_crm_controller_crmcontroller_createguest",
-      "community": 22,
+      "community": 111,
       "norm_label": ".createguest()"
     },
     {
@@ -6273,7 +6291,7 @@
       "source_file": "backend/src/modules/crm/crm.controller.ts",
       "source_location": "L27",
       "id": "crm_crm_controller_crmcontroller_getguestbyid",
-      "community": 22,
+      "community": 111,
       "norm_label": ".getguestbyid()"
     },
     {
@@ -6282,7 +6300,7 @@
       "source_file": "backend/src/modules/crm/crm.controller.ts",
       "source_location": "L32",
       "id": "crm_crm_controller_crmcontroller_updateguest",
-      "community": 22,
+      "community": 111,
       "norm_label": ".updateguest()"
     },
     {
@@ -6291,7 +6309,7 @@
       "source_file": "backend/src/modules/crm/crm.controller.ts",
       "source_location": "L37",
       "id": "crm_crm_controller_crmcontroller_deleteguest",
-      "community": 22,
+      "community": 111,
       "norm_label": ".deleteguest()"
     },
     {
@@ -6345,7 +6363,7 @@
       "source_file": "backend/src/modules/prisma/prisma.module.ts",
       "source_location": "L1",
       "id": "backend_src_modules_prisma_prisma_module_ts",
-      "community": 3,
+      "community": 105,
       "norm_label": "prisma.module.ts"
     },
     {
@@ -6354,7 +6372,7 @@
       "source_file": "backend/src/modules/prisma/prisma.module.ts",
       "source_location": "L10",
       "id": "prisma_prisma_module_prismamodule",
-      "community": 3,
+      "community": 105,
       "norm_label": "prismamodule"
     },
     {
@@ -6435,7 +6453,7 @@
       "source_file": "backend/src/modules/user/user.controller.ts",
       "source_location": "L5",
       "id": "user_user_controller_usercontroller",
-      "community": 17,
+      "community": 113,
       "norm_label": "usercontroller"
     },
     {
@@ -6444,7 +6462,7 @@
       "source_file": "backend/src/modules/user/user.controller.ts",
       "source_location": "L6",
       "id": "user_user_controller_usercontroller_constructor",
-      "community": 17,
+      "community": 113,
       "norm_label": ".constructor()"
     },
     {
@@ -6453,7 +6471,7 @@
       "source_file": "backend/src/modules/user/user.controller.ts",
       "source_location": "L9",
       "id": "user_user_controller_usercontroller_getall",
-      "community": 17,
+      "community": 113,
       "norm_label": ".getall()"
     },
     {
@@ -6462,7 +6480,7 @@
       "source_file": "backend/src/modules/user/user.controller.ts",
       "source_location": "L14",
       "id": "user_user_controller_usercontroller_getbyorg",
-      "community": 17,
+      "community": 113,
       "norm_label": ".getbyorg()"
     },
     {
@@ -6471,7 +6489,7 @@
       "source_file": "backend/src/modules/user/user.controller.ts",
       "source_location": "L19",
       "id": "user_user_controller_usercontroller_createinorg",
-      "community": 17,
+      "community": 113,
       "norm_label": ".createinorg()"
     },
     {
@@ -6480,7 +6498,7 @@
       "source_file": "backend/src/modules/user/user.controller.ts",
       "source_location": "L24",
       "id": "user_user_controller_usercontroller_delete",
-      "community": 17,
+      "community": 113,
       "norm_label": ".delete()"
     },
     {
@@ -6552,7 +6570,7 @@
       "source_file": "backend/src/modules/public/public.controller.ts",
       "source_location": "L1",
       "id": "backend_src_modules_public_public_controller_ts",
-      "community": 23,
+      "community": 106,
       "norm_label": "public.controller.ts"
     },
     {
@@ -6678,7 +6696,7 @@
       "source_file": "backend/src/modules/public/public.module.ts",
       "source_location": "L1",
       "id": "backend_src_modules_public_public_module_ts",
-      "community": 3,
+      "community": 106,
       "norm_label": "public.module.ts"
     },
     {
@@ -6687,7 +6705,7 @@
       "source_file": "backend/src/modules/public/public.module.ts",
       "source_location": "L13",
       "id": "public_public_module_publicmodule",
-      "community": 3,
+      "community": 106,
       "norm_label": "publicmodule"
     },
     {
@@ -6696,7 +6714,7 @@
       "source_file": "backend/src/modules/public/cache.service.ts",
       "source_location": "L1",
       "id": "backend_src_modules_public_cache_service_ts",
-      "community": 23,
+      "community": 106,
       "norm_label": "cache.service.ts"
     },
     {
@@ -6705,7 +6723,7 @@
       "source_file": "backend/src/modules/public/cache.service.ts",
       "source_location": "L3",
       "id": "public_cache_service_cacheentry",
-      "community": 23,
+      "community": 106,
       "norm_label": "cacheentry"
     },
     {
@@ -6759,7 +6777,7 @@
       "source_file": "backend/src/modules/cms/cms.controller.spec.ts",
       "source_location": "L1",
       "id": "backend_src_modules_cms_cms_controller_spec_ts",
-      "community": 22,
+      "community": 110,
       "norm_label": "cms.controller.spec.ts"
     },
     {
@@ -6768,7 +6786,7 @@
       "source_file": "backend/src/modules/cms/cms.service.ts",
       "source_location": "L1",
       "id": "backend_src_modules_cms_cms_service_ts",
-      "community": 26,
+      "community": 105,
       "norm_label": "cms.service.ts"
     },
     {
@@ -6849,7 +6867,7 @@
       "source_file": "backend/src/modules/cms/cms.module.ts",
       "source_location": "L1",
       "id": "backend_src_modules_cms_cms_module_ts",
-      "community": 3,
+      "community": 105,
       "norm_label": "cms.module.ts"
     },
     {
@@ -6858,7 +6876,7 @@
       "source_file": "backend/src/modules/cms/cms.module.ts",
       "source_location": "L12",
       "id": "cms_cms_module_cmsmodule",
-      "community": 3,
+      "community": 105,
       "norm_label": "cmsmodule"
     },
     {
@@ -6876,7 +6894,7 @@
       "source_file": "backend/src/modules/cms/cms.controller.ts",
       "source_location": "L1",
       "id": "backend_src_modules_cms_cms_controller_ts",
-      "community": 22,
+      "community": 110,
       "norm_label": "cms.controller.ts"
     },
     {
@@ -6885,7 +6903,7 @@
       "source_file": "backend/src/modules/cms/cms.controller.ts",
       "source_location": "L8",
       "id": "cms_cms_controller_cmscontroller",
-      "community": 22,
+      "community": 110,
       "norm_label": "cmscontroller"
     },
     {
@@ -6894,7 +6912,7 @@
       "source_file": "backend/src/modules/cms/cms.controller.ts",
       "source_location": "L9",
       "id": "cms_cms_controller_cmscontroller_constructor",
-      "community": 22,
+      "community": 110,
       "norm_label": ".constructor()"
     },
     {
@@ -6903,7 +6921,7 @@
       "source_file": "backend/src/modules/cms/cms.controller.ts",
       "source_location": "L12",
       "id": "cms_cms_controller_cmscontroller_getpages",
-      "community": 22,
+      "community": 110,
       "norm_label": ".getpages()"
     },
     {
@@ -6912,7 +6930,7 @@
       "source_file": "backend/src/modules/cms/cms.controller.ts",
       "source_location": "L17",
       "id": "cms_cms_controller_cmscontroller_createpage",
-      "community": 22,
+      "community": 110,
       "norm_label": ".createpage()"
     },
     {
@@ -6921,7 +6939,7 @@
       "source_file": "backend/src/modules/cms/cms.controller.ts",
       "source_location": "L22",
       "id": "cms_cms_controller_cmscontroller_createsection",
-      "community": 22,
+      "community": 110,
       "norm_label": ".createsection()"
     },
     {
@@ -6930,7 +6948,7 @@
       "source_file": "backend/src/modules/cms/cms.controller.ts",
       "source_location": "L27",
       "id": "cms_cms_controller_cmscontroller_updatesection",
-      "community": 22,
+      "community": 110,
       "norm_label": ".updatesection()"
     },
     {
@@ -6993,7 +7011,7 @@
       "source_file": "backend/src/modules/inventory/inventory.controller.spec.ts",
       "source_location": "L1",
       "id": "backend_src_modules_inventory_inventory_controller_spec_ts",
-      "community": 22,
+      "community": 35,
       "norm_label": "inventory.controller.spec.ts"
     },
     {
@@ -7002,7 +7020,7 @@
       "source_file": "backend/src/modules/inventory/inventory.module.ts",
       "source_location": "L1",
       "id": "backend_src_modules_inventory_inventory_module_ts",
-      "community": 3,
+      "community": 35,
       "norm_label": "inventory.module.ts"
     },
     {
@@ -7011,7 +7029,7 @@
       "source_file": "backend/src/modules/inventory/inventory.module.ts",
       "source_location": "L12",
       "id": "inventory_inventory_module_inventorymodule",
-      "community": 3,
+      "community": 35,
       "norm_label": "inventorymodule"
     },
     {
@@ -7029,7 +7047,7 @@
       "source_file": "backend/src/modules/inventory/inventory.controller.ts",
       "source_location": "L1",
       "id": "backend_src_modules_inventory_inventory_controller_ts",
-      "community": 22,
+      "community": 35,
       "norm_label": "inventory.controller.ts"
     },
     {
@@ -7038,7 +7056,7 @@
       "source_file": "backend/src/modules/inventory/inventory.controller.ts",
       "source_location": "L8",
       "id": "inventory_inventory_controller_inventorycontroller",
-      "community": 22,
+      "community": 35,
       "norm_label": "inventorycontroller"
     },
     {
@@ -7047,7 +7065,7 @@
       "source_file": "backend/src/modules/inventory/inventory.controller.ts",
       "source_location": "L9",
       "id": "inventory_inventory_controller_inventorycontroller_constructor",
-      "community": 22,
+      "community": 35,
       "norm_label": ".constructor()"
     },
     {
@@ -7056,7 +7074,7 @@
       "source_file": "backend/src/modules/inventory/inventory.controller.ts",
       "source_location": "L12",
       "id": "inventory_inventory_controller_inventorycontroller_getinventoryitems",
-      "community": 22,
+      "community": 35,
       "norm_label": ".getinventoryitems()"
     },
     {
@@ -7065,7 +7083,7 @@
       "source_file": "backend/src/modules/inventory/inventory.controller.ts",
       "source_location": "L17",
       "id": "inventory_inventory_controller_inventorycontroller_createinventoryitem",
-      "community": 22,
+      "community": 35,
       "norm_label": ".createinventoryitem()"
     },
     {
@@ -7074,7 +7092,7 @@
       "source_file": "backend/src/modules/inventory/inventory.controller.ts",
       "source_location": "L22",
       "id": "inventory_inventory_controller_inventorycontroller_addstocktransaction",
-      "community": 22,
+      "community": 35,
       "norm_label": ".addstocktransaction()"
     },
     {
@@ -7137,7 +7155,7 @@
       "source_file": "backend/src/modules/hr/hr.controller.spec.ts",
       "source_location": "L1",
       "id": "backend_src_modules_hr_hr_controller_spec_ts",
-      "community": 22,
+      "community": 112,
       "norm_label": "hr.controller.spec.ts"
     },
     {
@@ -7155,7 +7173,7 @@
       "source_file": "backend/src/modules/hr/hr.module.ts",
       "source_location": "L1",
       "id": "backend_src_modules_hr_hr_module_ts",
-      "community": 3,
+      "community": 105,
       "norm_label": "hr.module.ts"
     },
     {
@@ -7164,7 +7182,7 @@
       "source_file": "backend/src/modules/hr/hr.module.ts",
       "source_location": "L12",
       "id": "hr_hr_module_hrmodule",
-      "community": 3,
+      "community": 105,
       "norm_label": "hrmodule"
     },
     {
@@ -7173,7 +7191,7 @@
       "source_file": "backend/src/modules/hr/hr.controller.ts",
       "source_location": "L1",
       "id": "backend_src_modules_hr_hr_controller_ts",
-      "community": 22,
+      "community": 112,
       "norm_label": "hr.controller.ts"
     },
     {
@@ -7182,7 +7200,7 @@
       "source_file": "backend/src/modules/hr/hr.controller.ts",
       "source_location": "L8",
       "id": "hr_hr_controller_hrcontroller",
-      "community": 22,
+      "community": 112,
       "norm_label": "hrcontroller"
     },
     {
@@ -7191,7 +7209,7 @@
       "source_file": "backend/src/modules/hr/hr.controller.ts",
       "source_location": "L9",
       "id": "hr_hr_controller_hrcontroller_constructor",
-      "community": 22,
+      "community": 112,
       "norm_label": ".constructor()"
     },
     {
@@ -7200,7 +7218,7 @@
       "source_file": "backend/src/modules/hr/hr.controller.ts",
       "source_location": "L12",
       "id": "hr_hr_controller_hrcontroller_getstaff",
-      "community": 22,
+      "community": 112,
       "norm_label": ".getstaff()"
     },
     {
@@ -7209,7 +7227,7 @@
       "source_file": "backend/src/modules/hr/hr.controller.ts",
       "source_location": "L17",
       "id": "hr_hr_controller_hrcontroller_createstaff",
-      "community": 22,
+      "community": 112,
       "norm_label": ".createstaff()"
     },
     {
@@ -7218,7 +7236,7 @@
       "source_file": "backend/src/modules/hr/hr.controller.ts",
       "source_location": "L22",
       "id": "hr_hr_controller_hrcontroller_addattendance",
-      "community": 22,
+      "community": 112,
       "norm_label": ".addattendance()"
     },
     {
@@ -7227,7 +7245,7 @@
       "source_file": "backend/src/modules/finance/finance.controller.ts",
       "source_location": "L1",
       "id": "backend_src_modules_finance_finance_controller_ts",
-      "community": 22,
+      "community": 108,
       "norm_label": "finance.controller.ts"
     },
     {
@@ -7236,7 +7254,7 @@
       "source_file": "backend/src/modules/finance/finance.controller.ts",
       "source_location": "L8",
       "id": "finance_finance_controller_financecontroller",
-      "community": 22,
+      "community": 108,
       "norm_label": "financecontroller"
     },
     {
@@ -7245,7 +7263,7 @@
       "source_file": "backend/src/modules/finance/finance.controller.ts",
       "source_location": "L9",
       "id": "finance_finance_controller_financecontroller_constructor",
-      "community": 22,
+      "community": 108,
       "norm_label": ".constructor()"
     },
     {
@@ -7254,7 +7272,7 @@
       "source_file": "backend/src/modules/finance/finance.controller.ts",
       "source_location": "L12",
       "id": "finance_finance_controller_financecontroller_getinvoices",
-      "community": 22,
+      "community": 108,
       "norm_label": ".getinvoices()"
     },
     {
@@ -7263,7 +7281,7 @@
       "source_file": "backend/src/modules/finance/finance.controller.ts",
       "source_location": "L17",
       "id": "finance_finance_controller_financecontroller_createinvoice",
-      "community": 22,
+      "community": 108,
       "norm_label": ".createinvoice()"
     },
     {
@@ -7272,7 +7290,7 @@
       "source_file": "backend/src/modules/finance/finance.controller.ts",
       "source_location": "L22",
       "id": "finance_finance_controller_financecontroller_generatebookinginvoice",
-      "community": 22,
+      "community": 108,
       "norm_label": ".generatebookinginvoice()"
     },
     {
@@ -7281,7 +7299,7 @@
       "source_file": "backend/src/modules/finance/finance.controller.ts",
       "source_location": "L27",
       "id": "finance_finance_controller_financecontroller_getexpenses",
-      "community": 22,
+      "community": 108,
       "norm_label": ".getexpenses()"
     },
     {
@@ -7290,7 +7308,7 @@
       "source_file": "backend/src/modules/finance/finance.controller.ts",
       "source_location": "L32",
       "id": "finance_finance_controller_financecontroller_createexpense",
-      "community": 22,
+      "community": 108,
       "norm_label": ".createexpense()"
     },
     {
@@ -7299,7 +7317,7 @@
       "source_file": "backend/src/modules/finance/finance.controller.spec.ts",
       "source_location": "L1",
       "id": "backend_src_modules_finance_finance_controller_spec_ts",
-      "community": 22,
+      "community": 108,
       "norm_label": "finance.controller.spec.ts"
     },
     {
@@ -7308,7 +7326,7 @@
       "source_file": "backend/src/modules/finance/finance.service.ts",
       "source_location": "L1",
       "id": "backend_src_modules_finance_finance_service_ts",
-      "community": 24,
+      "community": 23,
       "norm_label": "finance.service.ts"
     },
     {
@@ -7380,7 +7398,7 @@
       "source_file": "backend/src/modules/finance/finance.module.ts",
       "source_location": "L1",
       "id": "backend_src_modules_finance_finance_module_ts",
-      "community": 3,
+      "community": 23,
       "norm_label": "finance.module.ts"
     },
     {
@@ -7389,7 +7407,7 @@
       "source_file": "backend/src/modules/finance/finance.module.ts",
       "source_location": "L12",
       "id": "finance_finance_module_financemodule",
-      "community": 3,
+      "community": 23,
       "norm_label": "financemodule"
     },
     {
@@ -7551,7 +7569,7 @@
       "source_file": "/Users/sanjay/Business/kswms/PUBLIC_API_DOCS.md",
       "source_location": "L76",
       "id": "kswms_public_api_docs_example_request_76",
-      "community": 0,
+      "community": 115,
       "norm_label": "example request:"
     },
     {
@@ -7560,7 +7578,7 @@
       "source_file": "/Users/sanjay/Business/kswms/PUBLIC_API_DOCS.md",
       "source_location": "L77",
       "id": "kswms_public_api_docs_codeblock_5",
-      "community": 0,
+      "community": 115,
       "norm_label": "code:javascript (fetch('http://localhost:4000/api/v1/public/techzone/website')"
     },
     {
@@ -7569,7 +7587,7 @@
       "source_file": "/Users/sanjay/Business/kswms/PUBLIC_API_DOCS.md",
       "source_location": "L83",
       "id": "kswms_public_api_docs_successful_response_200_ok_83",
-      "community": 107,
+      "community": 54,
       "norm_label": "successful response (`200 ok`):"
     },
     {
@@ -7578,7 +7596,7 @@
       "source_file": "/Users/sanjay/Business/kswms/PUBLIC_API_DOCS.md",
       "source_location": "L84",
       "id": "kswms_public_api_docs_codeblock_6",
-      "community": 107,
+      "community": 54,
       "norm_label": "code:json ({)"
     },
     {
@@ -7605,7 +7623,7 @@
       "source_file": "/Users/sanjay/Business/kswms/PUBLIC_API_DOCS.md",
       "source_location": "L163",
       "id": "kswms_public_api_docs_2_hotel_property_operations_hms",
-      "community": 0,
+      "community": 54,
       "norm_label": "2. hotel property operations (hms)"
     },
     {
@@ -7614,7 +7632,7 @@
       "source_file": "/Users/sanjay/Business/kswms/PUBLIC_API_DOCS.md",
       "source_location": "L165",
       "id": "kswms_public_api_docs_a_retrieve_available_rooms",
-      "community": 0,
+      "community": 54,
       "norm_label": "a. retrieve available rooms"
     },
     {
@@ -7641,7 +7659,7 @@
       "source_file": "/Users/sanjay/Business/kswms/PUBLIC_API_DOCS.md",
       "source_location": "L199",
       "id": "kswms_public_api_docs_b_query_room_availability_statistics",
-      "community": 0,
+      "community": 54,
       "norm_label": "b. query room availability statistics"
     },
     {
@@ -7668,7 +7686,7 @@
       "source_file": "/Users/sanjay/Business/kswms/PUBLIC_API_DOCS.md",
       "source_location": "L215",
       "id": "kswms_public_api_docs_c_request_direct_room_stay_reservation",
-      "community": 0,
+      "community": 54,
       "norm_label": "c. request direct room stay reservation"
     },
     {
@@ -9125,7 +9143,7 @@
       "file_type": "document",
       "source_file": "PUBLIC_API_DOCS.md",
       "source_location": "L76",
-      "community": 0,
+      "community": 115,
       "norm_label": "successful response (`200 ok`):",
       "id": "kswms_public_api_docs_successful_response_200_ok_76"
     },
@@ -9134,7 +9152,7 @@
       "file_type": "document",
       "source_file": "PUBLIC_API_DOCS.md",
       "source_location": "L110",
-      "community": 107,
+      "community": 54,
       "norm_label": "successful response (`200 ok`):",
       "id": "kswms_public_api_docs_successful_response_200_ok_110"
     },
@@ -9300,9 +9318,9 @@
       "source_file": "ecosystem.config.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ecosystem_config_js",
-      "target": "kswms_ecosystem_config_fs",
-      "confidence_score": 1.0
+      "target": "kswms_ecosystem_config_fs"
     },
     {
       "relation": "contains",
@@ -9310,9 +9328,9 @@
       "source_file": "ecosystem.config.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ecosystem_config_js",
-      "target": "kswms_ecosystem_config_path",
-      "confidence_score": 1.0
+      "target": "kswms_ecosystem_config_path"
     },
     {
       "relation": "contains",
@@ -9320,9 +9338,9 @@
       "source_file": "ecosystem.config.js",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ecosystem_config_js",
-      "target": "kswms_ecosystem_config_parseenvfile",
-      "confidence_score": 1.0
+      "target": "kswms_ecosystem_config_parseenvfile"
     },
     {
       "relation": "contains",
@@ -9330,9 +9348,9 @@
       "source_file": "ecosystem.config.js",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ecosystem_config_js",
-      "target": "kswms_ecosystem_config_backendenv",
-      "confidence_score": 1.0
+      "target": "kswms_ecosystem_config_backendenv"
     },
     {
       "relation": "contains",
@@ -9340,9 +9358,9 @@
       "source_file": "ecosystem.config.js",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ecosystem_config_js",
-      "target": "kswms_ecosystem_config_backend_port",
-      "confidence_score": 1.0
+      "target": "kswms_ecosystem_config_backend_port"
     },
     {
       "relation": "contains",
@@ -9350,9 +9368,9 @@
       "source_file": "ecosystem.config.js",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ecosystem_config_js",
-      "target": "kswms_ecosystem_config_frontend_port",
-      "confidence_score": 1.0
+      "target": "kswms_ecosystem_config_frontend_port"
     },
     {
       "relation": "contains",
@@ -12868,8 +12886,28 @@
       "source_file": "frontend/src/lib/api.ts",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_src_lib_api_ts",
-      "target": "lib_api_isip",
+      "target": "lib_api_isip"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/lib/api.ts",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "frontend_src_lib_api_ts",
+      "target": "lib_api_platformdomains",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/lib/api.ts",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "frontend_src_lib_api_ts",
+      "target": "lib_api_matcheddomain",
       "confidence_score": 1.0
     },
     {
@@ -14018,6 +14056,28 @@
       "confidence_score": 1.0,
       "source": "backend_src_main_ts",
       "target": "src_app_module_appmodule"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "backend_src_main_ts",
+      "target": "backend_src_modules_prisma_prisma_service_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "backend_src_main_ts",
+      "target": "prisma_prisma_service_prismaservice",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -22916,5 +22976,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "c964f30cc520a7cdbac68566243a52c20b905d89"
+  "built_at_commit": "74c163abbec3793b6815e3d3de417ee208cadf2d"
 }
