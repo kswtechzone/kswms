@@ -51,7 +51,7 @@ module.exports = {
     {
       name: 'kswms-frontend',
       script: 'server.js',
-      cwd: './frontend/.next/standalone',
+      cwd: './frontend/.next/standalone/frontend',
       env: {
         NODE_ENV: 'production',
         PORT: FRONTEND_PORT,

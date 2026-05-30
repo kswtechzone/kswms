@@ -41,9 +41,9 @@ sudo apt install -y certbot python3-certbot-nginx
    npm install
    npm run build
    
-   # Important: For the standalone build to work, you must copy the static folders:
-   cp -r public .next/standalone/
-   cp -r .next/static .next/standalone/.next/
+    # Important: For the standalone build to work, you must copy the static folders:
+    cp -r public .next/standalone/frontend/public
+    cp -r .next/static .next/standalone/frontend/.next/static
    ```
 
 ## 3. Starting the Applications with PM2

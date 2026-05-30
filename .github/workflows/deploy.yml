@@ -35,9 +35,23 @@ jobs:
             export NODE_OPTIONS="--max-old-space-size=1024"
             npm run build -w frontend
             
-            # Copy assets for frontend standalone output
-            cp -r frontend/public frontend/.next/standalone/
-            cp -r frontend/.next/static frontend/.next/standalone/.next/
+            # Prepare standalone output
+            mkdir -p frontend/.next/standalone/frontend/.next
+
+            # Preserve old static chunks so cached browsers don't 404 on renamed chunks
+            if [ -d frontend/.next/standalone/frontend/.next/static ]; then
+              cp -r frontend/.next/standalone/frontend/.next/static frontend/.next/static-old
+            fi
+
+            # Copy fresh build assets into the standalone output
+            cp -r frontend/public frontend/.next/standalone/frontend/public
+            cp -r frontend/.next/static frontend/.next/standalone/frontend/.next/static
+
+            # Merge back any old static files that the new build doesn't have
+            if [ -d frontend/.next/static-old ]; then
+              cp -rn frontend/.next/static-old/. frontend/.next/standalone/frontend/.next/static/
+              rm -rf frontend/.next/static-old
+            fi
             
             # Restart PM2
             pm2 restart ecosystem.config.js
