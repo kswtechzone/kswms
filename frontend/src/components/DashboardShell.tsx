@@ -251,7 +251,7 @@ export default function DashboardShell({ children, mode }: DashboardShellProps) 
         }}>
           <div style={{ position: 'relative', width: '300px' }}>
             <Search size={18} style={{ position: 'absolute', left: '12px', top: '50%', transform: 'translateY(-50%)', color: 'var(--text-muted)' }} />
-            <input type="text" placeholder={isAdmin ? 'Search everything...' : 'Search your business...'} className="input" style={{ paddingLeft: '40px', background: 'white' }} />
+            <input type="text" placeholder={isAdmin ? 'Search everything...' : 'Search your business...'} className="input" style={{ paddingLeft: '40px' }} />
           </div>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-4)' }}>

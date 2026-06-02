@@ -114,7 +114,7 @@ export default function AdminOverview() {
           <h3 style={{ marginBottom: 'var(--space-5)', fontSize: '1.125rem', fontWeight: 600 }}>Quick Actions</h3>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-3)' }}>
             <a href="/admin/users" className="btn btn-primary" style={{ width: '100%', textDecoration: 'none', textAlign: 'center', display: 'block' }}>Add New User</a>
-            <a href="/admin/brands" className="btn" style={{ width: '100%', background: 'var(--secondary)', color: 'white', textDecoration: 'none', textAlign: 'center', display: 'block' }}>Create New Brand</a>
+            <a href="/admin/brands" className="btn" style={{ width: '100%', background: 'var(--accent)', color: 'black', textDecoration: 'none', textAlign: 'center', display: 'block' }}>Create New Brand</a>
             <button className="btn" style={{ width: '100%', background: 'transparent', border: '1px solid var(--border)' }}>Download Reports</button>
           </div>
         </div>

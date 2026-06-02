@@ -24,7 +24,11 @@ export default function ThemeToggle({ className = '' }: { className?: string }) 
   return (
     <button
       onClick={toggle}
-      className={`p-2.5 rounded-xl border border-[var(--border)] bg-[var(--bg-card)] text-[var(--text-muted)] hover:text-[var(--text-main)] transition-all duration-200 hover:border-primary/30 ${className}`}
+      className={`p-2.5 rounded-xl border transition-all duration-200 hover:border-primary/30 ${
+        theme === 'light'
+          ? 'border-[var(--border)] bg-[var(--bg-card)] text-[var(--text-main)] hover:text-primary'
+          : 'border-primary/30 bg-primary/10 text-primary hover:bg-primary/20'
+      } ${className}`}
       aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
     >
       {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}

@@ -356,7 +356,7 @@ export default function DashboardPage() {
                 <Link href="/dashboard/hotel-management" className="btn btn-primary" style={{ width: '100%', textDecoration: 'none', textAlign: 'center' }}>New Reservation</Link>
               )}
               {enabledModules.includes('POS') && (
-                <Link href="/dashboard/pos" className="btn" style={{ width: '100%', background: 'var(--secondary)', color: 'white', textDecoration: 'none', textAlign: 'center' }}>Create Order</Link>
+                <Link href="/dashboard/pos" className="btn" style={{ width: '100%', background: 'var(--accent)', color: 'black', textDecoration: 'none', textAlign: 'center' }}>Create Order</Link>
               )}
               {enabledModules.includes('HR') && (
                 <Link href="/dashboard/hr" className="btn" style={{ width: '100%', background: 'transparent', border: '1px solid var(--border)', textDecoration: 'none', textAlign: 'center' }}>Add Employee</Link>

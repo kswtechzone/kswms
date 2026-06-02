@@ -29,7 +29,11 @@ export default function ThemeProvider({ children }: { children: React.ReactNode 
       {children}
       <button
         onClick={toggleTheme}
-        className="fixed bottom-8 right-8 w-14 h-14 rounded-full bg-primary text-white border-none cursor-pointer flex items-center justify-center shadow-lg z-50 transition-transform hover:scale-110"
+        className={`fixed bottom-8 right-8 w-14 h-14 rounded-full border-none cursor-pointer flex items-center justify-center shadow-lg z-50 transition-all duration-300 hover:scale-110 ${
+          theme === 'light'
+            ? 'bg-[var(--bg-card)] text-[var(--text-main)] border border-[var(--border)] shadow-md'
+            : 'bg-primary text-white shadow-lg shadow-primary/30'
+        }`}
         aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
       >
         {theme === 'light' ? <Moon size={24} /> : <Sun size={24} />}

@@ -22,11 +22,11 @@ const variantStyles: Record<Variant, string> = {
   primary:
     'bg-primary hover:bg-primary-500 text-white shadow-lg shadow-primary/25 hover:shadow-primary/40',
   secondary:
-    'bg-white/10 hover:bg-white/20 text-white backdrop-blur-sm border border-white/10',
+    'bg-[var(--bg-card)] hover:bg-[var(--bg-main)] text-[var(--text-main)] border border-[var(--border)] backdrop-blur-sm',
   outline:
-    'border border-white/20 text-white hover:bg-white/5 backdrop-blur-sm',
+    'border border-[var(--border)] text-[var(--text-muted)] hover:text-[var(--text-main)] hover:bg-[var(--bg-card)] backdrop-blur-sm',
   ghost:
-    'text-muted dark:text-muted-dark hover:text-white hover:bg-white/5',
+    'text-[var(--text-muted)] hover:text-[var(--text-main)] hover:bg-[var(--bg-card)]',
 };
 
 const sizeStyles: Record<Size, string> = {

@@ -743,7 +743,7 @@ export default function ParlorOverview() {
               {/* Left Column: Visual Catalog */}
               <div style={{ 
                 padding: '24px', overflowY: 'auto', display: 'flex', flexDirection: 'column', 
-                gap: '16px', borderRight: '1px solid var(--border)', background: '#f8fafc' 
+                gap: '16px', borderRight: '1px solid var(--border)', background: 'var(--bg-main)' 
               }}>
                 {/* Search & Filter pills row */}
                 <div style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
@@ -766,7 +766,7 @@ export default function ParlorOverview() {
                     onClick={() => setPosCategoryFilter('ALL')}
                     style={{
                       padding: '6px 14px', borderRadius: '20px', fontSize: '0.8rem', fontWeight: 700, cursor: 'pointer',
-                      background: posCategoryFilter === 'ALL' ? 'var(--primary)' : 'white',
+                      background: posCategoryFilter === 'ALL' ? 'var(--primary)' : 'var(--bg-card)',
                       color: posCategoryFilter === 'ALL' ? 'white' : 'var(--text-muted)',
                       border: posCategoryFilter === 'ALL' ? 'none' : '1px solid var(--border)',
                       boxShadow: posCategoryFilter === 'ALL' ? '0 4px 6px rgba(0,0,0,0.1)' : 'none'
@@ -780,7 +780,7 @@ export default function ParlorOverview() {
                       onClick={() => setPosCategoryFilter(cat.name)}
                       style={{
                         padding: '6px 14px', borderRadius: '20px', fontSize: '0.8rem', fontWeight: 700, cursor: 'pointer',
-                        background: posCategoryFilter === cat.name ? 'var(--primary)' : 'white',
+                        background: posCategoryFilter === cat.name ? 'var(--primary)' : 'var(--bg-card)',
                         color: posCategoryFilter === cat.name ? 'white' : 'var(--text-muted)',
                         border: posCategoryFilter === cat.name ? 'none' : '1px solid var(--border)',
                         boxShadow: posCategoryFilter === cat.name ? '0 4px 6px rgba(0,0,0,0.1)' : 'none'
