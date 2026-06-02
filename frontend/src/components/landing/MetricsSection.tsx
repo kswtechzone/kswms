@@ -34,7 +34,8 @@ const metrics = [
 export default function MetricsSection() {
   return (
     <section id="metrics" className="py-20 sm:py-28 border-t border-white/5 text-center w-full">
-      <div className="text-center mb-14">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div className="text-center mb-14">
         <h2 className="text-2xl sm:text-3xl font-extrabold text-white mb-5">
           Robust Enterprise Metrics
         </h2>
@@ -56,6 +57,7 @@ export default function MetricsSection() {
             </div>
           );
         })}
+      </div>
       </div>
     </section>
   );

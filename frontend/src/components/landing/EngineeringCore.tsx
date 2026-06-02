@@ -6,8 +6,8 @@ export default function EngineeringCore() {
   return (
     <section id="engineering" className="py-16 sm:py-24 border-t border-white/5 w-full relative">
       <div className="absolute top-1/2 left-1/4 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-[#8B5CF6]/3 blur-[120px] rounded-full pointer-events-none" />
-
-      <div className="grid lg:grid-cols-2 gap-10 md:gap-16 items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div className="grid lg:grid-cols-2 gap-10 md:gap-16 items-center">
 
         <div className="space-y-6">
           <div className="w-11 h-11 rounded-2xl bg-[#6366F1]/10 border border-[#6366F1]/20 flex items-center justify-center text-[#6366F1] flex-shrink-0">
@@ -108,6 +108,7 @@ export default function EngineeringCore() {
           </div>
         </div>
 
+      </div>
       </div>
     </section>
   );

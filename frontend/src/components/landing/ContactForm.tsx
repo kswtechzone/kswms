@@ -17,10 +17,10 @@ export default function ContactForm() {
   };
 
   return (
-    <section id="contact" className="py-16 sm:py-24 border-t border-white/5 w-full relative">
+    <section id="contact" className="py-16 sm:py-24 border-t border-white/5 w-full relative flex flex-col items-center">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-cyan-500/3 blur-[100px] rounded-full pointer-events-none -z-10" />
-
-      <div className="text-center mb-10">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div className="text-center mb-10">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white mb-4">
           Custom Enterprise Deployments
         </h2>
@@ -159,6 +159,7 @@ export default function ContactForm() {
             <p className="text-[10px] text-slate-500 mt-0.5">Kathmandu, Nepal</p>
           </div>
         </div>
+      </div>
       </div>
     </section>
   );

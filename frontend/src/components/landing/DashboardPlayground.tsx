@@ -20,17 +20,15 @@ export default function DashboardPlayground() {
   return (
     <section id="playground" className="py-20 sm:py-28 w-full relative">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] sm:w-[70%] h-[70%] bg-indigo-500/3 blur-[120px] rounded-full -z-10 pointer-events-none" />
-
-      <div className="text-center mb-12 sm:mb-16">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white mb-5">
-          Interactive Dashboard Simulator
-        </h2>
-        <p className="text-slate-400 max-w-2xl mx-auto text-xs sm:text-sm px-1 leading-relaxed">
-          Experience the responsive modular interfaces engineered specifically for each industry vertical.
-        </p>
-      </div>
-
-      <div className="grid lg:grid-cols-12 gap-8 md:gap-10 items-stretch">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white mb-5">
+            Interactive Dashboard Simulator
+          </h2>
+          <p className="text-slate-400 max-w-2xl mx-auto text-xs sm:text-sm px-1 leading-relaxed">
+            Experience the responsive modular interfaces engineered specifically for each industry vertical.
+          </p>
+        </div>
 
         {/* Left Selection Tabs */}
         <div className="lg:col-span-4 flex lg:flex-col gap-4 sm:gap-5 overflow-x-auto lg:overflow-x-visible pb-4 lg:pb-0 scrollbar-none justify-start lg:justify-center -mx-4 px-4 lg:mx-0 lg:px-0">
@@ -131,7 +129,7 @@ export default function DashboardPlayground() {
             </AnimatePresence>
           </div>
         </div>
-
+      </div>
       </div>
     </section>
   );

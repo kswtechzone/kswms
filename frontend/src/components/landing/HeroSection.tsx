@@ -11,13 +11,14 @@ const fadeUp = {
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-[calc(100vh-5rem)] pt-16 sm:pt-24 md:pt-32 pb-16 sm:pb-20 flex flex-col items-center justify-center text-center">
-      <motion.div
-        initial="hidden"
-        animate="visible"
-        variants={fadeUp}
-        className="max-w-4xl space-y-8 sm:space-y-10"
-      >
+    <section className="relative min-h-[calc(100vh-5rem)] pt-16 sm:pt-24 md:pt-32 pb-16 sm:pb-20 flex flex-col items-center justify-center text-center w-full">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex flex-col items-center justify-center">
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={fadeUp}
+          className="max-w-4xl space-y-8 sm:space-y-10"
+        >
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 sm:px-4.5 sm:py-2 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-[#8B5CF6] text-[10px] sm:text-xs font-bold uppercase tracking-widest shadow-inner shadow-indigo-500/5 max-w-full text-center">
           <Zap size={10} className="text-cyan-400 flex-shrink-0 sm:w-3 sm:h-3" />
           <span className="truncate">Designed & Engineered by KSW Tech Zone</span>
@@ -50,6 +51,7 @@ export default function HeroSection() {
           </Link>
         </div>
       </motion.div>
+      </div>
     </section>
   );
 }

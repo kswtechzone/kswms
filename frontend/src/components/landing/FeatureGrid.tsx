@@ -70,7 +70,8 @@ const colorClasses: Record<string, { bg: string; border: string; text: string; d
 export default function FeatureGrid() {
   return (
     <section id="features" className="py-20 sm:py-28 border-t border-white/5 w-full">
-      <div className="text-center mb-14 sm:mb-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div className="text-center mb-14 sm:mb-20">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white mb-5">
           Unified Suite Features
         </h2>
@@ -102,6 +103,7 @@ export default function FeatureGrid() {
             </div>
           );
         })}
+      </div>
       </div>
     </section>
   );

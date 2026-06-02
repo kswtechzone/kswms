@@ -40,9 +40,11 @@ module.exports = {
   apps: [
     {
       name: 'kswms-backend',
-      script: 'npm',
-      args: 'run start:prod',
+      // Runs the built NestJS file directly with Node
+      script: './dist/main.js',
       cwd: './backend',
+      instances: 1,
+      exec_mode: 'fork',
       env: {
         NODE_ENV: 'production',
         PORT: BACKEND_PORT,
@@ -50,8 +52,11 @@ module.exports = {
     },
     {
       name: 'kswms-frontend',
-      script: 'server.js',
-      cwd: './frontend/.next/standalone/frontend',
+      // Looks for server.js directly inside the correct standalone root folder
+      script: './server.js',
+      cwd: './frontend/.next/standalone',
+      instances: 'max',
+      exec_mode: 'cluster',
       env: {
         NODE_ENV: 'production',
         PORT: FRONTEND_PORT,
@@ -60,4 +65,3 @@ module.exports = {
     },
   ],
 };
-

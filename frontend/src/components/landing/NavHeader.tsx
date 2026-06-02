@@ -4,7 +4,7 @@ import { Sparkles, ArrowRight } from 'lucide-react';
 export default function NavHeader() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-white/5 bg-[#030712]/80 backdrop-blur-xl transition-all duration-300">
-        <div className="flex items-center justify-between h-16 sm:h-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex items-center justify-between h-16 sm:h-20">
         <Link href="/" className="flex items-center gap-2.5 sm:gap-3 group">
           <div className="w-8.5 h-8.5 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-[#6366F1] via-[#8B5CF6] to-[#06B6D4] flex items-center justify-center shadow-lg shadow-indigo-500/20 group-hover:scale-105 transition-transform duration-300 flex-shrink-0">
             <Sparkles size={16} className="text-white animate-pulse sm:hidden" />
