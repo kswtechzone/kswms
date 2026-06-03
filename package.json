@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "concurrently \"npm run dev -w frontend\" \"npm run start:dev -w backend\"",
     "build": "npm run build -w backend && npm run build -w frontend",
+    "postbuild": "cp -r .next/static .next/standalone/.next/ && cp -r public .next/standalone/",
     "install-all": "npm install"
   },
   "devDependencies": {
